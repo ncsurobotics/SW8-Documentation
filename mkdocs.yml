@@ -15,4 +15,14 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+nav:
+  - Home: index.md
+  - Electrical: 
+    - Overview: electrical/overview.md
+    - Standards: electrical/standards.md
+    - Crimping: electrical/crimping.md
+  - Mechanical:
+    - Overview: mechanical/overview.md
+  - Software:
+    - Overview: software/overview.md
 
