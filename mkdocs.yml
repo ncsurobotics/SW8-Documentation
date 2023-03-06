@@ -1,0 +1,18 @@
+site_name: AquaPack Robotics SW8 Documentation
+extra_css:
+  - stylesheets/extra.css
+theme:
+  name: material
+  # logo: path/to/image/file.jpg
+  features:
+    - navigation.tabs
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
