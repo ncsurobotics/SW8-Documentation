@@ -3,6 +3,8 @@
 
 ## Connectors
 
+TODO: Fischers
+
 **Signal & Low Current**:
 
 - Wire to Wire: JST SM

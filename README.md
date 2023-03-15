@@ -41,3 +41,4 @@ mkdocs gh-deploy
 - Top level img folder is for site images, not images used in docs
 - Note that each page should use second level headers at the highest. Top level headers are defined by the names in the nav tree.
 - Using `jpg` / `jpeg` images is HIGHLY recommended over `png` images. If using `png` images, consider using `pngquant` to compress them first.
+- Diagrams should be generated using drawio / diagrams.net (use desktop app). Store the source files in `diagram` folders (in each subteam's folder). When exporting a jpg / png, place it in the `img` folder. Use the same name as the diagram source.

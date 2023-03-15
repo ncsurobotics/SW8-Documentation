@@ -25,18 +25,29 @@ nav:
   - Home: index.md
   - Electrical: 
     - Standards: electrical/standards.md
-    - Crimping: electrical/crimping.md
-    - Soldering: electrical/soldering.md
-    - System Overview: electrical/overview.md
-    - Power System: electrical/moab_power.md
-    - Main Electronics Board (MEB): electrical/meb.md
-    - Manipulation Systems Board (MSB): electrical/msb.md
-    - Control Board: electrical/controlboard.md
-    - Acoustics System: electrical/acoustics.md
-    - Acoustics Distribution Board: electrical/acoustics_dist.md
-    - Acoustics Single Channel Board: electrical/acoustics_single_chan.md
-    - Legacy Design Info: electrical/legacy.md
-    - Parts List: electrical/parts.md
+    - Connectors:
+      - Crimping: electrical/connectors/crimping.md
+      - Soldering: electrical/connectors/soldering.md
+      - Fischers: electrical/connectors/fischers.md
+    - System Design:
+      - Overview: electrical/sysdesign/moab.md
+      - Power System: electrical/sysdesign/moab_power.md
+      - Acoustics System: electrical/sysdesign/acoustics.md
+      - Cameras: electrical/sysdesign/cameras.md
+      - Endcap Pinout: electrical/sysdesign/endcap.md
+    - Boards:
+      - Main Electronics Board (MEB): electrical/boards/meb.md
+      - Manipulation Systems Board (MSB): electrical/boards/msb.md
+      - Control Board: electrical/boards/controlboard.md
+      - Acoustics Distribution Board: electrical/boards/acoustics_dist.md
+      - Acoustics Single Channel Board: electrical/boards/acoustics_single_chan.md
+    - Legacy Design:
+      - Power System: electrical/legacy/powersys.md
+      - Control System: electrical/legacy/controlsys.md
+      - Acoustics System: electrical/legacy/acoustics.md
+      - Boards: electrical/legacy/boards.md
+      - Cameras: electrical/legacy/cameras.md
+    - Parts List / Bill of Materials: electrical/parts.md
   - Mechanical:
     - Overview: mechanical/overview.md
   - Software:

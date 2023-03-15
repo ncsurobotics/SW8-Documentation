@@ -1,2 +1,0 @@
-
-TODO: Electrical system overview
