@@ -23,10 +23,10 @@ copyright: AquaPack Robotics &copy; 2023 Released under <a href="https://creativ
 nav:
   - Home: index.md
   - Electrical: 
-    - Overview: electrical/overview.md
     - Standards: electrical/standards.md
     - Crimping: electrical/crimping.md
     - Soldering: electrical/soldering.md
+    - System Overview: electrical/overview.md
   - Mechanical:
     - Overview: mechanical/overview.md
   - Software:
