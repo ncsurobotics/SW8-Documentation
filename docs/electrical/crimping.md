@@ -77,7 +77,7 @@ A crimp tool making an "m" shaped crimp is required. The PA-20 crimper is used f
 TODO
 
 
-## Powerpole Connectors
+## Powerpole Connectors (PP15-45)
 
 ![](./img/powerpole-connectors.jpg){: .center style="width:80%"}
 
