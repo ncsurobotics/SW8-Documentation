@@ -14,3 +14,17 @@
 [data-md-color-scheme="slate"] {
     --md-default-bg-color: #222222;
 }
+
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
