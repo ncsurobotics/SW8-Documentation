@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pinout" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -608,9 +613,65 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Control Board
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Control Board
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pinout" class="md-nav__link">
+    Pinout
+  </a>
+  
+    <nav class="md-nav" aria-label="Pinout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#control-board-v1" class="md-nav__link">
+    Control Board v1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-board-v2" class="md-nav__link">
+    Control Board v2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-board-docs" class="md-nav__link">
+    Control Board Docs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -892,6 +953,48 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pinout" class="md-nav__link">
+    Pinout
+  </a>
+  
+    <nav class="md-nav" aria-label="Pinout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#control-board-v1" class="md-nav__link">
+    Control Board v1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-board-v2" class="md-nav__link">
+    Control Board v2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-board-docs" class="md-nav__link">
+    Control Board Docs
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -919,6 +1022,13 @@
 <li>Mission code can use high level descriptions of robot motion. This increases code portability between robots or to a simulator.</li>
 </ul>
 <p>The control board is a "third party" project. It was designed by a club member (Marcus Behel) in 2022/2023 with the intent of being used on SeaWolf VIII. It is located on Marcus's <a href="https://github.com/MB3hel/AUVControlBoard">github</a> and is primarily maintained by Marcus. The code and design are open source.</p>
+<h2 id="pinout">Pinout</h2>
+<p>There are two versions of control board built around two different microcontrollers. The pinout for each is shown below.</p>
+<h3 id="control-board-v1">Control Board v1</h3>
+<p><img alt="" class="center" src="../../img/controlboard_v1_pinout.jpg" style="width:80%" /></p>
+<h3 id="control-board-v2">Control Board v2</h3>
+<p><img alt="" class="center" src="../../img/controlboard_v2_pinout.jpg" style="width:80%" /></p>
+<h2 id="control-board-docs">Control Board Docs</h2>
 <p>More information about the control board can be found <a href="https://mb3hel.github.io/AUVControlBoard/">here</a></p>
 
 
