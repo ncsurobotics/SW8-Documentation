@@ -38,6 +38,7 @@ nav:
     - Boards:
       - Main Electronics Board (MEB): electrical/boards/meb.md
       - Manipulation Systems Board (MSB): electrical/boards/msb.md
+      - Load Balancing Board (LBB): electrical/boards/lbb.md
       - Control Board: electrical/boards/controlboard.md
       - Acoustics Distribution Board: electrical/boards/acoustics_dist.md
       - Acoustics Single Channel Board: electrical/boards/acoustics_single_chan.md
