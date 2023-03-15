@@ -28,6 +28,15 @@ nav:
     - Crimping: electrical/crimping.md
     - Soldering: electrical/soldering.md
     - System Overview: electrical/overview.md
+    - Power System: electrical/moab_power.md
+    - Main Electronics Board (MEB): electrical/meb.md
+    - Manipulation Systems Board (MSB): electrical/msb.md
+    - Control Board: electrical/controlboard.md
+    - Acoustics System: electrical/acoustics.md
+    - Acoustics Distribution Board: electrical/acoustics_dist.md
+    - Acoustics Single Channel Board: electrical/acoustics_single_chan.md
+    - Legacy Design Info: electrical/legacy.md
+    - Parts List: electrical/parts.md
   - Mechanical:
     - Overview: mechanical/overview.md
   - Software:
