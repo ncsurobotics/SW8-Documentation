@@ -23,6 +23,8 @@ There are two versions of control board built around two different microcontroll
 
 ### Control Board v1
 
+*Note: The pressure / temp sensor is not included anymore.*
+
 ![](../img/controlboard_v1_pinout.jpg){: .center style="width:80%"}
 
 ### Control Board v2
