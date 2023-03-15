@@ -3,7 +3,8 @@ extra_css:
   - stylesheets/extra.css
 theme:
   name: material
-  # logo: path/to/image/file.jpg
+  logo: img/logo.png
+  favicon: img/favicon.png
   features:
     - navigation.tabs
   palette:
