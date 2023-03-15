@@ -1,13 +1,9 @@
 # SeaWolf VIII Documentation
 
-Documentation for [AquaPack Robotic's](https://aquapackrobotics.org/) SeaWolf VIII.
+Documentation for [AquaPack Robotics'](https://aquapackrobotics.org/) SeaWolf VIII.
+
+SeaWolf VIII is designed to compete in the [RoboSub](https://robonation.org/programs/robosub/) competition each year. SeaWolf VIII is AquaPack Robotic's 8th robot (competing 2020-present).
 
 
 ![](./img/sw8.jpg)
 
-<!--
-## About SeaWolf VII
-
-Mostly design goals (broad) and what it is supposed to do in competition
-
--->

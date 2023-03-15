@@ -91,3 +91,15 @@ The TRIcrimp Powerpole crimp tool should be used. These are reasonably priced an
 ### Crimping Process
 
 TODO
+
+
+
+## Heatshrink Ring Connectors
+
+### Tools
+
+TODO
+
+### Crimping Process
+
+TODO

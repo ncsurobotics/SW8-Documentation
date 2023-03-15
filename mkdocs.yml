@@ -26,9 +26,10 @@ nav:
   - Electrical: 
     - Standards: electrical/standards.md
     - Connectors:
-      - Crimped: electrical/connectors/crimping.md
-      - Soldering: electrical/connectors/soldering.md
+      - Crimped Connectors: electrical/connectors/crimping.md
+      - Soldered Connectors: electrical/connectors/soldering.md
       - Fischers: electrical/connectors/fischers.md
+      - Waterproof Splicing: electrical/connectors/waterproof_splice.md
     - System Design:
       - Overview: electrical/sysdesign/moab.md
       - Power System: electrical/sysdesign/moab_power.md
