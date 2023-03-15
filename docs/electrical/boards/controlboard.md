@@ -1,4 +1,6 @@
 
+![](../img/controlboard.jpg){: .center style="width:80%"}
+
 The control board is responsible for handling robot motion using thrusters. It generates PWM control signals for the robot's ESCs and provides a control interface to the computer via USB.
 
 However, the control board is much more complex than a PWM signal generator with a USB interface. The control board is a motion coprocessor intended to be used by the computer to control the robot's motion.
