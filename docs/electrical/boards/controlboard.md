@@ -16,4 +16,20 @@ This is beneficial for a few reasons
 
 The control board is a "third party" project. It was designed by a club member (Marcus Behel) in 2022/2023 with the intent of being used on SeaWolf VIII. It is located on Marcus's [github](https://github.com/MB3hel/AUVControlBoard) and is primarily maintained by Marcus. The code and design are open source.
 
+
+## Pinout
+
+There are two versions of control board built around two different microcontrollers. The pinout for each is shown below.
+
+### Control Board v1
+
+![](../img/controlboard_v1_pinout.jpg){: .center style="width:80%"}
+
+### Control Board v2
+
+![](../img/controlboard_v2_pinout.jpg){: .center style="width:80%"}
+
+
+## Control Board Docs
+
 More information about the control board can be found [here](https://mb3hel.github.io/AUVControlBoard/)
