@@ -3,7 +3,11 @@
 
 ## Connectors
 
-TODO: Fischers
+**Waterproof (external) Connections**
+
+- Wire to Endcap (detachable): Fischers
+- Wire to Endcap (not detachable): BlueRobotics penetrators (wetlink penetrators should be preferred over potted penetrators)
+- Wire to Wire: Either use an epoxy filled block or waterproof heatshrink 
 
 **Signal & Low Current**:
 

@@ -26,7 +26,7 @@ nav:
   - Electrical: 
     - Standards: electrical/standards.md
     - Connectors:
-      - Crimping: electrical/connectors/crimping.md
+      - Crimped: electrical/connectors/crimping.md
       - Soldering: electrical/connectors/soldering.md
       - Fischers: electrical/connectors/fischers.md
     - System Design:
