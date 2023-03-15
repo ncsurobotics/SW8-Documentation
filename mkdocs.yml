@@ -26,6 +26,7 @@ nav:
     - Overview: electrical/overview.md
     - Standards: electrical/standards.md
     - Crimping: electrical/crimping.md
+    - Soldering: electrical/soldering.md
   - Mechanical:
     - Overview: mechanical/overview.md
   - Software:
