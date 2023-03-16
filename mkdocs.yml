@@ -26,7 +26,7 @@ markdown_extensions:
   - pymdownx.superfences
 extra:
   generator: false
-copyright: AquaPack Robotics &copy; 2023 Released under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+copyright: AquaPack Robotics &copy; 2023 Released under <a id="footer-link" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 nav:
   - Home: index.md
   - Electrical: 
