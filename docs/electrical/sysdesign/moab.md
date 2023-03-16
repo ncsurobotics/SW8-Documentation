@@ -11,7 +11,7 @@ For example, if MOAB is stable and used in the robot, a new board could be added
 
 ## System Block Diagram
 
-![](../img/moab_diagram.jpg){: data-zoomable}
+![](../img/moab_diagram.jpg){: }
 
 *Last Update: 03/16/2023 by Marcus Behel*
 
