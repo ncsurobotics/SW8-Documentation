@@ -1,6 +1,9 @@
 site_name: AquaPack Robotics SW8 Documentation
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascript/zooming.min.js
+  - javascript/activate.js
 theme:
   name: material
   logo: img/logo.png
@@ -18,6 +21,9 @@ theme:
         name: Switch to light mode
 markdown_extensions:
   - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 extra:
   generator: false
 copyright: AquaPack Robotics &copy; 2023 Released under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
