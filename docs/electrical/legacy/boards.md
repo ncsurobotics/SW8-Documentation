@@ -4,3 +4,4 @@
 - Aux board (integrated into MEB 1.2)
 - Optoisolator board
 - Monolithic acoustics board
+- Camera PCB
