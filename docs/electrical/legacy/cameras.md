@@ -1,6 +1,4 @@
 
-*Note that this page is currently an outline and most of the content is not yet written.*
-
 ## Intel RealSense HD 
 
 These cameras use a custom enclosure designed to fit an [Intel RealSense Depth Camera (435i)](https://www.intelrealsense.com/depth-camera-d435i/).
@@ -104,26 +102,22 @@ The following were considered:
 
 ## Really Old (SW7/SW6) Cameras
 
-TODO: Image
+![](../img/sw6_cam_front.jpg){: style="height:200px" } 
+![](../img/sw6_cam_back.jpg){: style="height:200px" } 
+
 
 These cameras were used for a short time on SW8, however are not in good condition and do not work well.
 
 These are built using the internals from a Microsoft Lifecam Cinema (originally released in 2009). 
 
-TODO: Camera picture
+![](../img/lifecam_cinema.jpg){: style="width:50%" }
 
 
 ### Assembly
 
-The cameras must be disassembled and the two internal boards removed. *Note that the disassembly process is destructive and seems to require cutting metal using flush cuts.*
+The cameras must be disassembled and the two internal boards removed. *Note that the disassembly process is destructive and seems to require cutting metal using flush cuts.* The internal cable uses a connector to one of these boards. It should be cut short and soldered to the fischer receptacle on the back of the camera hull. 
 
-
-TODO: Internal boards picture
-
-
-The internal cable uses a connector to one of these boards. It should be cut short and soldered to the fischer receptacle on the back of the camera hull. 
-
-TODO: Soldered wire picture
+![](../img/sw6_cam_wiring.jpg){: style="width:50%" } 
 
 Note that the cameras use 104 fischer receptacles, however when used on SW8 they were connected to a 103 fischer receptacle (both 4 pin). A custom cable was used for this (fischers on both ends; cable diameter must fit both 103 and 104 plugs). Additionally, note that the camera pinout does not match what used to be used for USB 2 pinout on SW8. Thus, the cable "crossed" some signals. *If ever reassembling these cameras, it is recommended to redo the pinout on both ends.*
 
