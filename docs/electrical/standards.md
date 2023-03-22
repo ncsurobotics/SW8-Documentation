@@ -123,3 +123,34 @@
 - PCBs
 - Protoboard
 - Breadboard (avoid on robot, if necessary hot glue EVERYTHING)
+
+
+## Microcontrollers
+
+Custom boards integrating microcontrollers should use TI's MSP430 series of MCUs. This family of microcontrollers integrates the required features and are generally powerful enough for our use cases. Additionally, NCSU's ECE department has an embedded systems course built around these microcontrollers, thus it helps align club operation with coursework.
+
+If there is no compelling reason not to, TI's MSP430FR2355 is recommended. This chip integrates almost any peripheral that would be required, has many serial communication interfaces, and has more GPIO pins than would typically be used. The LQFT-48 package version of this chip is easy enough to hand solder as well.
+
+If there is a compelling reason to select a different MSP430, this is permissable, however it should be attempted to use a chip that can be more easily hand soldered. Avoid QFN and BGA packages (or anything else with pads contained under the chip).
+
+
+In cases where an MSP430 does not provide sufficient power for what is being designed, it is recommended to use an Arm architecture microcontroller. There are many vendors of these on the market (not a complete list):
+
+- TI's MSP432 series
+- TI's MSP-M0 series
+- Microchip's SAM series
+- ST Microelectronics STM32 chips
+- Raspberry Pi RP2040
+- Many NXP Semiconductors chips
+
+When choosing a chip, make sure to also research the cost of a debug probe. For example, the STM32 series are compatible with low cost ST-Link debug probes.
+
+
+## FPGAs
+
+FPGAs supported by Vivado are preferred.
+
+
+## IC Packages
+
+Integrated circuits used on our boards should be hand solderable. Avoid QFN and BGA packages (or anything else with pads contained under the chip). This can be violated if absolutely necessary, however make sure there is an assembly plan.
