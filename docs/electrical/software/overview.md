@@ -50,9 +50,9 @@ Generally, this is used only during prototyping or when rapid firmware developme
 
 **Required Operating System:** Windows, macOS, Linux
 
-**Download Link:** [TI CCS](https://www.ti.com/design-resources/embedded-development/ccs-development-tools.html)
+**Download Link:** [TI CCS](https://www.ti.com/design-resources/embedded-development/ccs-development-tools.html) | [MSP430 GCC](https://www.ti.com/tool/MSP430-GCC-OPENSOURCE)
 
-TI's [Code Composer Studio](https://www.ti.com/design-resources/embedded-development/ccs-development-tools.html) supports the MSP430 chips using TI's compiler or a [separately installed](https://www.ti.com/tool/MSP430-GCC-OPENSOURCE) open source GCC compiler. This IDE is Eclipse based and integrates a debugger among many other tools.
+TI's Code Composer Studiohttps://www.ti.com/design-resources/embedded-development/ccs-development-tools.html supports the MSP430 chips using TI's compiler or a separately installed open source GCC compiler. This IDE is Eclipse based and integrates a debugger among many other tools.
 
 ![](../img/sw_ccs_ide.jpg){: .center style="width: 80%"}
 
@@ -74,7 +74,8 @@ LTSpice is a free circuit simulator with builtin models for many Analog Devies /
 
 **Required Operating System:** Windows
 
-**Download Link:** [PSpice for TI](https://www.ti.com/tool/PSPICE-FOR-TI) (requires TI account and export approval)
+**Download Link:** [PSpice for TI](https://www.ti.com/tool/PSPICE-FOR-TI)  
+*(requires TI account and export approval)*
 
 PSpice for TI is a limited feature version of Cadance's PSpice simulator. It is more difficult to setup, thus we generally prefer LTSpice, however there are cases where this should be used instead (when a TI model is encrypted or when a model uses PSpice features that LTSpice does not support). Note that using ADI / LT devices is often not possible in PSpice. ADI / LT typically provide encrypted LTSpice models only.
 
@@ -96,7 +97,8 @@ Historically, we have used ModelSim for Verilog design simulation, however due t
 
 **Required Operating System:** Windows, Linux
 
-**Download Link:** [Vivado ML Edition](https://www.xilinx.com/support/download.html) (requires AMD account and export approval)
+**Download Link:** [Vivado ML Edition](https://www.xilinx.com/support/download.html)  
+*(requires AMD account and export approval)*
 
 Vivado is used with our Digilent Basys3 FPGA dev board used for the Acoustics system. Vivado is currently used for synthesis, implementation, and bitstreaming. Going forward we intend to explore Vivado's simulation functions too.
 
@@ -134,7 +136,8 @@ Due to the few compatibility issues Octave may have, and the fact that Octave is
 
 **Required Operating System:** Windows, macOS, Linux
 
-**Download Links:** [Python](https://www.python.org/downloads/) | [NumPy](https://numpy.org/install/) | [SciPy](https://scipy.org/install/) | [Matplotlib](https://matplotlib.org/stable/users/getting_started/)
+**Download Links:** [Python 3](https://www.python.org/downloads/) | [NumPy](https://numpy.org/install/) | [SciPy](https://scipy.org/install/) | [Matplotlib](https://matplotlib.org/stable/users/getting_started/)  
+*(On Linux use distribution package manager to install python3)*
 
 Instead of MATLAB it is sometimes preferred (personal preference, language experience, better tool for the particular job, etc) to use Python with a few third party libraries. These libraries are usually `numpy`, `scipy`, and `matplotlib` (install these packages with `pip`). These libraries can allow python to be a very useful scientific computing tool for many similar applications to how MATLAB or Octave may be used.
 
@@ -143,9 +146,21 @@ Instead of MATLAB it is sometimes preferred (personal preference, language exper
 
 ### Git SCM
 
-TODO
+**Required Operating System:** Windows, macOS, Linux
 
+**Download Link:** [Git SCM](https://git-scm.com/downloads)  
+*(On macOS install Xcode command line tools; On linux install using distribution package manager)*
+
+Most of our PCB design files and embedded firmware source code is located in GitHub which uses git as a source control / version control tool. You will need `git` installed on your computer to use these repositories.
 
 ### Digilent WaveForms
 
-TODO
+**Required Operating System:** Windows, macOS, Linux
+
+**Download Link:** [WaveForms](https://digilent.com/shop/software/digilent-waveforms/) | [Adept Runtime](https://digilent.com/reference/software/adept/start)  
+*(On Linux make sure to install the Adept runtime first. This is not required on Windows or macOS)*
+
+
+Many members of the club have an Analog Discover 2 from coursework. WaveForms allows this to be used as an oscilliscope, logic analyzer, waveform generator, spectrum analyzer, and many more tools.
+
+![](../img/sw_waveforms_other.jpg){: .center style="width: 80%"}
