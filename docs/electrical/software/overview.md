@@ -92,7 +92,7 @@ Historically, we have used ModelSim for Verilog design simulation, however due t
 ![](../img/sw_modelsim_hdl.jpg){: .center style="width: 80%"}
 
 
-### Vivado
+### Vivado & Vitis
 
 **Required Operating System:** Windows, Linux
 
@@ -108,17 +108,35 @@ Vivado is used with our Digilent Basys3 FPGA dev board used for the Acoustics sy
 
 ### MATLAB
 
-TODO
+**Required Operating System:** Windows, macOS, Linux
+
+**Download Link:** Accessed through university. Follow university instructions.
+
+If MATLAB is available, it is generally advisable to use it over GNU Octave as MATLAB is faster and better supported.
+
+![](../img/sw_matlab_scicomp.jpg){: .center style="width: 80%"}
 
 
 ### GNU Octave
 
-TODO
+**Required Operating System:** Windows, macOS, Linux
+
+**Download Link:** [GNU Octave](https://octave.org/download)
+
+If MATLAB is not available, GNU Octave is compatible with many MATLAB programs. GNU Octave is free and open source with many packages similar to MATLAB toolboxes as well. While generally compatible with MATLAB code, Octave does not implement all functions. In particular many more recent MATLAB "helper" functions (ie advanced string manipulation functions) are not implemented and require more complex sets of operations to replicate in Octave. However, most core math functions are implemented in Octave.
+
+Due to the few compatibility issues Octave may have, and the fact that Octave is likely slower than MATLAB, it is usually recommended to use MATLAB if a license is available.
+
+![](../img/sw_octave_scicomp.jpg){: .center style="width: 80%"}
 
 
 ### Python + 3rd Party Packages
 
-TODO
+**Required Operating System:** Windows, macOS, Linux
+
+**Download Links:** [Python](https://www.python.org/downloads/) | [NumPy](https://numpy.org/install/) | [SciPy](https://scipy.org/install/) | [Matplotlib](https://matplotlib.org/stable/users/getting_started/)
+
+Instead of MATLAB it is sometimes preferred (personal preference, language experience, better tool for the particular job, etc) to use Python with a few third party libraries. These libraries are usually `numpy`, `scipy`, and `matplotlib` (install these packages with `pip`). These libraries can allow python to be a very useful scientific computing tool for many similar applications to how MATLAB or Octave may be used.
 
 
 ## Other
