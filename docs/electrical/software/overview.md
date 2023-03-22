@@ -6,12 +6,25 @@ There are various tools and pieces of software used in relation to the electrica
 
 ### KiCad
 
-TODO
+**Required Operating System:** Windows, macOS, Linux
+
+**Download Links:** [KiCad](https://www.kicad.org/)
+
+
+Used to design PCBs and schematics for various custom boards in use on SeaWolf VIII. KiCad is a free and open source Electronic Design Automation (EDA) tool which is generally easy to learn to use, but powerful enough when needed.
+
+![](../img/sw_kicad_eda.jpg){: .center style="width: 80%"}
 
 
 ### Altium Designer
 
-TODO
+**Required Operating System:** Windows
+
+**Download Links:** [Altium Designer](https://www.altium.com/altium-designer) (license either through university or AquaPack)
+
+Many SeaWolf VIII boards were originally designed using Altium Designer. Altium Designer is a proprietary EDA tool. While more commonly used in industry than KiCad, the decision was ultimately made to move to KiCad to simplify library management, reduce software learning curves, and improve operating system compatibility.
+
+![](../img/sw_altium_eda.jpg){: .center style="width: 80%"}
 
 
 
@@ -72,9 +85,38 @@ PSpice for TI is a limited feature version of Cadance's PSpice simulator. It is 
 
 ### ModelSim
 
-TODO
+**Required Operating System:** Windows, Linux
+
+Historically, we have used ModelSim for Verilog design simulation, however due to recent licensing changes we are migrating to OEM tools. In the case of some FPGAs (eg Intel) this would mean Intel Questa tools (which replace Intel ModelSim), however for other vendors we intend to use their tooling.
+
+![](../img/sw_modelsim_hdl.jpg){: .center style="width: 80%"}
+
 
 ### Vivado
+
+**Required Operating System:** Windows, Linux
+
+**Download Link:** [Vivado ML Edition](https://www.xilinx.com/support/download.html) (requires AMD account and export approval)
+
+Vivado is used with our Digilent Basys3 FPGA dev board used for the Acoustics system. Vivado is currently used for synthesis, implementation, and bitstreaming. Going forward we intend to explore Vivado's simulation functions too.
+
+![](../img/sw_vivado_hdl.jpg){: .center style="width: 80%"}
+
+## Scientific Computing
+
+*Generally used for mathematic modeling, validation, or simulation.*
+
+### MATLAB
+
+TODO
+
+
+### GNU Octave
+
+TODO
+
+
+### Python + 3rd Party Packages
 
 TODO
 
