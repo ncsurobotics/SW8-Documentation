@@ -161,6 +161,6 @@ Most of our PCB design files and embedded firmware source code is located in Git
 *(On Linux make sure to install the Adept runtime first. This is not required on Windows or macOS)*
 
 
-Many members of the club have an Analog Discover 2 from coursework. WaveForms allows this to be used as an oscilliscope, logic analyzer, waveform generator, spectrum analyzer, and many more tools.
+Many members of the club have an Analog Discover 2 from coursework. WaveForms allows this to be used as an oscilloscope, logic analyzer, waveform generator, spectrum analyzer, and many more tools.
 
 ![](../img/sw_waveforms_other.jpg){: .center style="width: 80%"}
