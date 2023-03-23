@@ -33,6 +33,7 @@ nav:
     - Standards: electrical/standards.md
     - Software: 
       - Overview: electrical/software/overview.md
+      - KiCad User Guide: electrical/software/kicad.md
       # TODO: Need a guide on programming MSP430 using launchpad's ezFET
       # TODO: User guides for KiCad, LTSpice, PSpice TI, Git. Spice sim guides need to include importing TI and non TI parts.
     - Connectors:
