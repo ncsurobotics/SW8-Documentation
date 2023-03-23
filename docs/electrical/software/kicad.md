@@ -88,16 +88,37 @@ TODO
 
 ## Design Workflow
 
-### Schematic Editor
+### Schematic
 
 TODO
 
 
-### PCB Editor
+### Electrical Rules Check
 
 TODO
 
 
-### Design Rules & DRC
+### Assign footprints
 
 TODO
+
+
+### PCB Layout & Routing
+
+TODO
+
+
+### Design Rules Check (DRC)
+
+TODO
+
+
+
+## Tips and Tricks
+
+TODO
+
+<!--
+- "Flat" multi page schematic
+- Note on using "HandSolder" footprints
+-->
