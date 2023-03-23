@@ -13,6 +13,8 @@ There are various tools and pieces of software used in relation to the electrica
 
 Used to design PCBs and schematics for various custom boards in use on SeaWolf VIII. KiCad is a free and open source Electronic Design Automation (EDA) tool which is generally easy to learn to use, but powerful enough when needed.
 
+We currently use KiCad version 7.
+
 ![](../img/sw_kicad_eda.jpg){: .center style="width: 80%"}
 
 
