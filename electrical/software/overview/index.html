@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../acoustics/">
+        <link rel="prev" href="../../standards/">
       
       
-        <link rel="next" href="../endcap/">
+        <link rel="next" href="../../connectors/crimping/">
       
       <link rel="icon" href="../../../img/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
     
     
       
-        <title>Cameras - AquaPack Robotics SW8 Documentation</title>
+        <title>Overview - AquaPack Robotics SW8 Documentation</title>
       
     
     
@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pcb-design" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -100,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cameras
+              Overview
             
           </span>
         </div>
@@ -334,14 +339,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
       
       
       
@@ -350,7 +357,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
           Software
@@ -361,11 +368,203 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../software/overview/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Overview
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-design" class="md-nav__link">
+    PCB Design
+  </a>
+  
+    <nav class="md-nav" aria-label="PCB Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kicad" class="md-nav__link">
+    KiCad
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium-designer" class="md-nav__link">
+    Altium Designer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#msp430-embedded-firmware" class="md-nav__link">
+    MSP430 Embedded Firmware
+  </a>
+  
+    <nav class="md-nav" aria-label="MSP430 Embedded Firmware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arduino-energia" class="md-nav__link">
+    Arduino / Energia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ti-code-composer-studio-ccs" class="md-nav__link">
+    TI Code Composer Studio (CCS)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circuit-simulation" class="md-nav__link">
+    Circuit Simulation
+  </a>
+  
+    <nav class="md-nav" aria-label="Circuit Simulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ltspice" class="md-nav__link">
+    LTSpice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pspice-for-ti" class="md-nav__link">
+    PSpice for TI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-design-fpga" class="md-nav__link">
+    Hardware Design (FPGA)
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware Design (FPGA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vivado-vitis" class="md-nav__link">
+    Vivado &amp; Vitis
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scientific-computing" class="md-nav__link">
+    Scientific Computing
+  </a>
+  
+    <nav class="md-nav" aria-label="Scientific Computing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matlab" class="md-nav__link">
+    MATLAB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gnu-octave" class="md-nav__link">
+    GNU Octave
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-3rd-party-packages" class="md-nav__link">
+    Python + 3rd Party Packages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other" class="md-nav__link">
+    Other
+  </a>
+  
+    <nav class="md-nav" aria-label="Other">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-scm" class="md-nav__link">
+    Git SCM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digilent-waveforms" class="md-nav__link">
+    Digilent WaveForms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -472,16 +671,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
       
       
       
@@ -490,7 +687,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_4">
           <span class="md-nav__icon md-icon"></span>
           System Design
@@ -503,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../moab/" class="md-nav__link">
+      <a href="../../sysdesign/moab/" class="md-nav__link">
         Overview (MOAB / FOAB)
       </a>
     </li>
@@ -517,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../moab_power/" class="md-nav__link">
+      <a href="../../sysdesign/moab_power/" class="md-nav__link">
         Power System
       </a>
     </li>
@@ -531,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../acoustics/" class="md-nav__link">
+      <a href="../../sysdesign/acoustics/" class="md-nav__link">
         Acoustics System
       </a>
     </li>
@@ -543,19 +740,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../sysdesign/cameras/" class="md-nav__link">
         Cameras
       </a>
-      
     </li>
   
 
@@ -567,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../endcap/" class="md-nav__link">
+      <a href="../../sysdesign/endcap/" class="md-nav__link">
         Endcap Pinout
       </a>
     </li>
@@ -954,6 +1143,176 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-design" class="md-nav__link">
+    PCB Design
+  </a>
+  
+    <nav class="md-nav" aria-label="PCB Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kicad" class="md-nav__link">
+    KiCad
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altium-designer" class="md-nav__link">
+    Altium Designer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#msp430-embedded-firmware" class="md-nav__link">
+    MSP430 Embedded Firmware
+  </a>
+  
+    <nav class="md-nav" aria-label="MSP430 Embedded Firmware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arduino-energia" class="md-nav__link">
+    Arduino / Energia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ti-code-composer-studio-ccs" class="md-nav__link">
+    TI Code Composer Studio (CCS)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circuit-simulation" class="md-nav__link">
+    Circuit Simulation
+  </a>
+  
+    <nav class="md-nav" aria-label="Circuit Simulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ltspice" class="md-nav__link">
+    LTSpice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pspice-for-ti" class="md-nav__link">
+    PSpice for TI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-design-fpga" class="md-nav__link">
+    Hardware Design (FPGA)
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware Design (FPGA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vivado-vitis" class="md-nav__link">
+    Vivado &amp; Vitis
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scientific-computing" class="md-nav__link">
+    Scientific Computing
+  </a>
+  
+    <nav class="md-nav" aria-label="Scientific Computing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matlab" class="md-nav__link">
+    MATLAB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gnu-octave" class="md-nav__link">
+    GNU Octave
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-3rd-party-packages" class="md-nav__link">
+    Python + 3rd Party Packages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other" class="md-nav__link">
+    Other
+  </a>
+  
+    <nav class="md-nav" aria-label="Other">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-scm" class="md-nav__link">
+    Git SCM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digilent-waveforms" class="md-nav__link">
+    Digilent WaveForms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -967,9 +1326,82 @@
                   
 
 
-  <h1>Cameras</h1>
+  <h1>Overview</h1>
 
-<p><em>Note that this page is currently an outline and most of the content is not yet written.</em></p>
+<p>There are various tools and pieces of software used in relation to the electrical design of SeaWolf VIII. These are listed below</p>
+<h2 id="pcb-design">PCB Design</h2>
+<h3 id="kicad">KiCad</h3>
+<p><strong>Required Operating System:</strong> Windows, macOS, Linux</p>
+<p><strong>Download Links:</strong> <a href="https://www.kicad.org/">KiCad</a></p>
+<p>Used to design PCBs and schematics for various custom boards in use on SeaWolf VIII. KiCad is a free and open source Electronic Design Automation (EDA) tool which is generally easy to learn to use, but powerful enough when needed.</p>
+<p><img alt="" class="center" src="../../img/sw_kicad_eda.jpg" style="width: 80%" /></p>
+<h3 id="altium-designer">Altium Designer</h3>
+<p><strong>Required Operating System:</strong> Windows</p>
+<p><strong>Download Links:</strong> <a href="https://www.altium.com/altium-designer">Altium Designer</a> (license either through university or AquaPack)</p>
+<p>Many SeaWolf VIII boards were originally designed using Altium Designer. Altium Designer is a proprietary EDA tool. While more commonly used in industry than KiCad, the decision was ultimately made to move to KiCad to simplify library management, reduce software learning curves, and improve operating system compatibility.</p>
+<p><img alt="" class="center" src="../../img/sw_altium_eda.jpg" style="width: 80%" /></p>
+<h2 id="msp430-embedded-firmware">MSP430 Embedded Firmware</h2>
+<p>Custom PCBs used on SeaWolf VIII are designed around TI's MSP430 MCUs or Launchpad development boards. The firmware for these boards is developed using one of the following tools. <em>Note that IAR is intentionally avoided.</em> TI's CCS is free and fully featured with no code size limit. Additionally, IAR's evaluation license only allows access to the newest version of IAR which can make project compatibility and maintenance difficult.</p>
+<h3 id="arduino-energia">Arduino / Energia</h3>
+<p><strong>Required Operating System:</strong> Windows, macOS, Linux</p>
+<p><strong>Download Links:</strong> <a href="https://www.arduino.cc/en/software">Arduino IDE</a> | <a href="https://github.com/MB3hel/Arduino-Core-MSP430">MSP430 Core</a></p>
+<p>While the Energia project is officially unmaintained since November 2022, there are builds of the Energia MSP430 Arduino core located at the link above. These builds user newer tooling and fix bugs with some of the chips used. This core can be installed with the official Arduino IDE.</p>
+<p>Generally, this is used only during prototyping or when rapid firmware development is required.</p>
+<p><img alt="" class="center" src="../../img/sw_arduino_ide.jpg" style="width: 80%" /></p>
+<h3 id="ti-code-composer-studio-ccs">TI Code Composer Studio (CCS)</h3>
+<p><strong>Required Operating System:</strong> Windows, macOS, Linux</p>
+<p><strong>Download Link:</strong> <a href="https://www.ti.com/design-resources/embedded-development/ccs-development-tools.html">TI CCS</a> | <a href="https://www.ti.com/tool/MSP430-GCC-OPENSOURCE">MSP430 GCC</a></p>
+<p>TI's Code Composer Studiohttps://www.ti.com/design-resources/embedded-development/ccs-development-tools.html supports the MSP430 chips using TI's compiler or a separately installed open source GCC compiler. This IDE is Eclipse based and integrates a debugger among many other tools.</p>
+<p><img alt="" class="center" src="../../img/sw_ccs_ide.jpg" style="width: 80%" /></p>
+<h2 id="circuit-simulation">Circuit Simulation</h2>
+<h3 id="ltspice">LTSpice</h3>
+<p><strong>Required Operating System:</strong> Windows, macOS, Linux (through Wine)</p>
+<p><strong>Download Link:</strong> <a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html">LTSpice</a></p>
+<p>LTSpice is a free circuit simulator with builtin models for many Analog Devies / Linear Tech chips. This is generally our preferred circuit simulator as it is easy to install and use. In some cases however, models designed for PSpice (usually TI parts) are not compatible (they are either encrypted or use PSpice features that LTSpice does not have). In these cases other software is used.</p>
+<p><img alt="" class="center" src="../../img/sw_ltspice_sim.jpg" style="width: 80%" /></p>
+<h3 id="pspice-for-ti">PSpice for TI</h3>
+<p><strong>Required Operating System:</strong> Windows</p>
+<p><strong>Download Link:</strong> <a href="https://www.ti.com/tool/PSPICE-FOR-TI">PSpice for TI</a><br />
+<em>(requires TI account and export approval)</em></p>
+<p>PSpice for TI is a limited feature version of Cadance's PSpice simulator. It is more difficult to setup, thus we generally prefer LTSpice, however there are cases where this should be used instead (when a TI model is encrypted or when a model uses PSpice features that LTSpice does not support). Note that using ADI / LT devices is often not possible in PSpice. ADI / LT typically provide encrypted LTSpice models only.</p>
+<p><img alt="" class="center" src="../../img/sw_pspiceti_sim.jpg" style="width: 80%" /></p>
+<h2 id="hardware-design-fpga">Hardware Design (FPGA)</h2>
+<h3 id="vivado-vitis">Vivado &amp; Vitis</h3>
+<p><strong>Required Operating System:</strong> Windows, Linux</p>
+<p><strong>Download Link:</strong> <a href="https://www.xilinx.com/support/download.html">Vivado ML Edition</a><br />
+<em>(requires AMD account and export approval)</em></p>
+<p>Vivado is used with our Digilent Basys3 FPGA dev board used for the Acoustics system. Vivado is currently used for synthesis, implementation, and bitstreaming. Going forward we intend to explore Vivado's simulation functions too.</p>
+<p><img alt="" class="center" src="../../img/sw_vivado_hdl.jpg" style="width: 80%" /></p>
+<h2 id="scientific-computing">Scientific Computing</h2>
+<p><em>Generally used for mathematic modeling, validation, or simulation.</em></p>
+<h3 id="matlab">MATLAB</h3>
+<p><strong>Required Operating System:</strong> Windows, macOS, Linux</p>
+<p><strong>Download Link:</strong> Accessed through university. Follow university instructions.</p>
+<p>If MATLAB is available, it is generally advisable to use it over GNU Octave as MATLAB is faster and better supported.</p>
+<p><img alt="" class="center" src="../../img/sw_matlab_scicomp.jpg" style="width: 80%" /></p>
+<h3 id="gnu-octave">GNU Octave</h3>
+<p><strong>Required Operating System:</strong> Windows, macOS, Linux</p>
+<p><strong>Download Link:</strong> <a href="https://octave.org/download">GNU Octave</a></p>
+<p>If MATLAB is not available, GNU Octave is compatible with many MATLAB programs. GNU Octave is free and open source with many packages similar to MATLAB toolboxes as well. While generally compatible with MATLAB code, Octave does not implement all functions. In particular many more recent MATLAB "helper" functions (ie advanced string manipulation functions) are not implemented and require more complex sets of operations to replicate in Octave. However, most core math functions are implemented in Octave.</p>
+<p>Due to the few compatibility issues Octave may have, and the fact that Octave is likely slower than MATLAB, it is usually recommended to use MATLAB if a license is available.</p>
+<p><img alt="" class="center" src="../../img/sw_octave_scicomp.jpg" style="width: 80%" /></p>
+<h3 id="python-3rd-party-packages">Python + 3rd Party Packages</h3>
+<p><strong>Required Operating System:</strong> Windows, macOS, Linux</p>
+<p><strong>Download Links:</strong> <a href="https://www.python.org/downloads/">Python 3</a> | <a href="https://numpy.org/install/">NumPy</a> | <a href="https://scipy.org/install/">SciPy</a> | <a href="https://matplotlib.org/stable/users/getting_started/">Matplotlib</a><br />
+<em>(On Linux use distribution package manager to install python3)</em></p>
+<p>Instead of MATLAB it is sometimes preferred (personal preference, language experience, better tool for the particular job, etc) to use Python with a few third party libraries. These libraries are usually <code>numpy</code>, <code>scipy</code>, and <code>matplotlib</code> (install these packages with <code>pip</code>). These libraries can allow python to be a very useful scientific computing tool for many similar applications to how MATLAB or Octave may be used.</p>
+<h2 id="other">Other</h2>
+<h3 id="git-scm">Git SCM</h3>
+<p><strong>Required Operating System:</strong> Windows, macOS, Linux</p>
+<p><strong>Download Link:</strong> <a href="https://git-scm.com/downloads">Git SCM</a><br />
+<em>(On macOS install Xcode command line tools; On linux install using distribution package manager)</em></p>
+<p>Most of our PCB design files and embedded firmware source code is located in GitHub which uses git as a source control / version control tool. You will need <code>git</code> installed on your computer to use these repositories.</p>
+<h3 id="digilent-waveforms">Digilent WaveForms</h3>
+<p><strong>Required Operating System:</strong> Windows, macOS, Linux</p>
+<p><strong>Download Link:</strong> <a href="https://digilent.com/shop/software/digilent-waveforms/">WaveForms</a> | <a href="https://digilent.com/reference/software/adept/start">Adept Runtime</a><br />
+<em>(On Linux make sure to install the Adept runtime first. This is not required on Windows or macOS)</em></p>
+<p>Many members of the club have an Analog Discover 2 from coursework. WaveForms allows this to be used as an oscilloscope, logic analyzer, waveform generator, spectrum analyzer, and many more tools.</p>
+<p><img alt="" class="center" src="../../img/sw_waveforms_other.jpg" style="width: 80%" /></p>
 
 
 
