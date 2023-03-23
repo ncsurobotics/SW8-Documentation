@@ -84,14 +84,6 @@ PSpice for TI is a limited feature version of Cadance's PSpice simulator. It is 
 
 ## Hardware Design (FPGA)
 
-### ModelSim
-
-**Required Operating System:** Windows, Linux
-
-Historically, we have used ModelSim for Verilog design simulation, however due to recent licensing changes we are migrating to OEM tools. In the case of some FPGAs (eg Intel) this would mean Intel Questa tools (which replace Intel ModelSim), however for other vendors we intend to use their tooling.
-
-![](../img/sw_modelsim_hdl.jpg){: .center style="width: 80%"}
-
 
 ### Vivado & Vitis
 
