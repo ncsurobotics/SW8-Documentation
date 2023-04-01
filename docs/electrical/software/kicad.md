@@ -1,4 +1,6 @@
 
+*Note that this page is currently an outline and most of the content is not yet written.*
+
 This user guide is intended to be a reference, not a tutorial. There are many good KiCad tutorials available online, however please note that there are sometimes multiple ways to do things in KiCad (eg library management). *In such cases, please use the methods described on this page.* Part of this page's purpose is to describe our conventions / approaches to using KiCad.
 
 *Note that this guide was written for KiCad 7.0.1*
