@@ -12,6 +12,14 @@ The current camera enclosures are designed to be able to house two camera module
 
 ![](../img/arducam_one_sealed.jpg){: .center style="width: 80%" }
 
+
+## Camera & Firmware
+
+When wiring a new camera, or installing a new camera in the camera hull, it is necessary to make sure it is running the correct firmware. **This requires a windows PC**.
+
+TODO: How to flash firmware.
+
+
 ## Cable Assembly
 
 The cable used for the cameras is an Igus CFBUS.PUR.068 cable. This cable is designed for USB 3.0 (8 pins with two shielded pairs), however we instead use it for 2x USB 2.0. This just means the shielding on the second set of wires is not strictly required.
@@ -76,4 +84,3 @@ TODO
 ### Fischer Receptacle
 
 TODO
-
