@@ -1,6 +1,4 @@
 
-*Note that this page is currently an outline and most of the content is not yet written.*
-
 The current Cameras used on SeaWolf VIII are based on [ArduCam B0292](https://www.arducam.com/product/arducam-usb-autofocus-imx219-b0292/) cameras. These camera modules connect to a computer by USB and are UVC compliant, meaning they should easily work on most operating systems.
 
 ![](../img/Arducam-B0292.jpg){: .center style="width:50%"}
@@ -13,7 +11,7 @@ The current camera enclosures are designed to be able to house two camera module
 ![](../img/arducam_one_sealed.jpg){: .center style="width: 80%" }
 
 
-## Camera & Firmware
+## Camera Firmware
 
 When wiring a new camera, or installing a new camera in the camera hull, it is necessary to make sure it is running the correct firmware. **This requires a windows PC**.
 
@@ -96,8 +94,53 @@ Cut the top 2-3 inches of a camera cable off and remove the outer insulation. Th
 
 ### Fischer Plug
 
-TODO
+The fischer plug needs to be soldered onto the cable matching the pinout [here](./endcap.md). Follow general fischer soldering and assembly procedures [here](../connectors/fischers.md).
+
+*Note that this fischer receptacle is more difficult to solder to than most. This is partially due to the three unused pins in the middle, partially due to the small wire gauge, and partially due to the length of wire you are able to strip back.*
+
+*Even if you are only assembling for one camera, solder all wires to the fischer plug. Failure to do so will result in a much weaker connection to the wire.*
+
+1. Strip 1cm (**no more**) of outer insulation off the Igus cable. Remove the paper shielding and mesh foil from all wires. Removing the paper and shielding is "difficult" (time consuming) and best done **carefully** using flush cuts. Make sure not to cut off any cables.
+
+    ![](../img/arducam_fischer_strip.jpg){: .center style="width:80%" }
+
+2. Strip about 2mm of each wire and tin it. **Do not strip more than 2mm. This wire insulation on the inner wires melts before solder, so it will shrink when you tin the wire.** After tinning, you should have approx 4mm of wire exposed. If less is exposed, strip off a little more insulation.
+
+    ![](../img/arducam_fischer_tin.jpg){: .center style="width:80%" }
+
+3. Then solder the wire to the fischer plug as you would normally solder a fischer. Follow the pinout. It is recommended to solder wires in the following order. You may have to cross wires across the connector and this order minimizes effort.
+
+    - Of the following colors, solder whichever is "easier" first.
+    - red or black
+    - white or green
+    - yellow or blue
+    - purple or orange
+    - Then repeat the same order but the other color.
+
+    ![](../img/arducam_fischer_soldered.jpg){: .center style="width:80%" }
+
+4. Once soldered, as always, fully assemble the plug, connect it to a receptacle, and make sure there is not continuity between any used pins. Note that continuity between the three center pins is possible (due to contact with remnants of wire shielding), but is acceptable since they are unused.
+
+
 
 ### Fischer Receptacle
 
-TODO
+The fischer receptacle is much easier to assemble, primarily because the wire does not need to be so short.
+
+1. Find a USB-A cable and cut off the other end (ie if it was a USB-A to USB-microB cable, cut off the micro-B side). It is best to find a cable with a similar USB-A connector to the one pictured. The outer material is rubber, which is important for step 2.
+
+    ![](../img/arducam_recept_wire.jpg){: .center style="width:80%" }
+
+2. Using flush cuts, trim down the USB-A outer rubber to make it fit through the fisher recepticle's nut.
+
+    ![](../img/arducam_recept_trim_cable.jpg){: .center style="width:80%" }
+
+    ![](../img/arducam_recept_trim_with_nut.jpg){: .center style="width:80%" }
+
+3. Strip and solder to the receptacle according to the endcap pinout. Note that only one wire is shown here. If two cameras are used, add a second USB-A cable to the recepticle on the apropriate pins. Follow the endcap pinout and table / diagram at the top of this section.
+
+    ![](../img/arducam_recept_soldered1.jpg){: .center style="width:80%" }
+
+4. As always, add hot glue to the receptacle for strain relief.
+
+    ![](../img/arducam_recept_hotglue1.jpg){: .center style="width:80%" }
