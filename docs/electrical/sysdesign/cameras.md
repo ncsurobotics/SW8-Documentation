@@ -17,7 +17,24 @@ The current camera enclosures are designed to be able to house two camera module
 
 When wiring a new camera, or installing a new camera in the camera hull, it is necessary to make sure it is running the correct firmware. **This requires a windows PC**.
 
-TODO: How to flash firmware.
+The camera firmware is flashed using a tool provided on the ArduCam forums. A zip with this flash tool and the firmware file to be flashed is located [here](https://drive.google.com/file/d/1UF6aPTeCx5p_h5UlSLCScOhPwagccd5p/view?usp=share_link).
+
+This tool is windows only. Additionally, it seems to have issues (cuts off part of the UI) on HiDPI systems. You may need to set display scaling to 100% in windows settings before running the program.
+
+After downloading the zip, extract it. There will be two things
+
+- A folder named `CommonBurnerAP v1.0.1.4`
+- A `.src` firmware file
+
+In the `CommonBurnerAP` folder run `CommonBurnerAP.exe`. You must connect the camera you want to flash before launching `CommonBurnerAP.exe`.
+
+Once launched, reference the image below and follow the steps below
+
+- Make sure the tab labeled "A" is selected.
+- Select the button labeled "B". This will bring up a file explorer window. Choose the `.src` firmware file
+- Click the button labeled "C". This will start flashing. Wait for the flash to finish before disconnecting the camera.
+
+![](../img/common_burner_ap.jpg){: .center style="width=80%" }
 
 
 ## Cable Assembly
