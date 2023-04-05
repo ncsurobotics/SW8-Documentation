@@ -77,7 +77,7 @@ Finally, crimp dupont pins (male) on each wire and assembe in an 4x2 housing as 
 
 A wire should be penetrated (using BlueRobotics penetrator) into the camera hull. This should be an 8-pin wire with shielded pairs for the USB 3 differential pairs (RX and TX Super Speed pairs).
 
-The wire used for this is **TODO: Find specific cable**
+The wire used for this is Igus CFBUS.PUR.068
 
 The wire is penetrated into the hull and female Dupont connectors installed. These are kept in two groups to allow removal through the penetrator's hole if needed. Note that these should be assembled to connect the wires to the breakout's dupont based on the table shown in the previous section. Note that this pinout is used to cross the TX and RX pairs as required.
 
