@@ -51,7 +51,7 @@ This library must be installed once per system you install KiCad on.
 
 ### Installation
 
-1. Clone [this](https://github.com/ncsurobotics/SW-KicadLibrary/) repository somewhere on your system. The location does not matter.
+1. Clone [this](https://github.com/ncsurobotics/SW-KicadLibrary/) repository somewhere on your system. The location does not matter. *On windows, avoid putting it in OneDrive (ie don't put it in your documents folder)*.
 2. Open KiCad. Close any open project (File > Close Project)
 3. Preferences > Manage Symbol Libraries
 4. The first time you open this menu, you will be asked to "Configure Global Symbol Library Table". Choose "Copy Default Global Symbol Table"
@@ -116,11 +116,58 @@ After creating the symbol, determine if you need to create a footprint. KiCad's 
 10. Double check the pin number order of the footprint and schematic. **This is especially important if you are using a footprint you did not make.**
 11. Save!
 
+Optionally, you can add a 3D model to a footprint.
+
+TODO: Guide.
+
+After creating your part (and saving everything) commit your changes in the SW-Kicad-Libraries repo and push.
+
 ### Importing Downloaded Parts
 
-TODO
+Many parts will have footprints and symbols (ECAD models) available for download. These often include 3D models too. Some common sources to find these models are
 
+- SamacSys (easiest to access through mosuer; **DO NOT INSTALL THE LIBRARY LOADER! DO NOT USE IT!**)
+- UltraLibrarian
+- SnapEDA
 
+Note that you will need an account to use any of these services. 
+
+1. When downloading a model, download symbol and footprint. If a 3D model is available, download it too.
+2. After downloading, follow the instructions below depending on where you downloaded the model from. Note that if a 3D model was not available, the 3D model file will be missing.
+
+    ??? custom "UltraLibrarian"
+        The downloaded file will be a `.zip` file. Extract it.Locate the following three files.
+
+        - Symbol: `KiCAD/[NAME]/[NAME].lib`
+        - Footprint: `KiCAD/[NAME]/footprints.pretty/[NAME].kicad_mod`
+        - 3D Model: `[NAME]/STEP/[NAME].step`
+
+3. Open KiCad's symbol editor
+4. Find SWLib in the panel on the left.
+5. Right click "SWLib" and choose "Import Symbol..."
+6. Choose the symbol file (`.lib`) described above.
+7. Save the symbol.
+8. Open the footprint editor.
+9. Find SWLib in the panel on the left.
+10. Right click "SWLib" and choose "Import Footprint..."
+11. Choose the footprint file (`.kicad_mod`) described above.
+12. Save into SWLib
+13. Copy the 3D model file (`.step` file described above) to SWLib. This must be copied to wherever you cloned SWLib. Paste the `.step` file into `SW-KicadLibrary/SWLib.3d`
+14. In the footprint editor, edit footprint properties (`File > Footprint Properties...`)
+15. Select the 3D models tab
+16. Click the plus button and type the following. **Never use the browse feature to select a 3d model!** Browse tool uses absolute paths, which will break the model on other people's systems.
+    ```
+    ../../SWLib.3d/[FILE].step
+    ```
+17. Replace `[FILE]` with the name of the step file. **This is case sensitive!**.
+18. Close the properties panel and save the footprint.
+19. Go back to the symbol editor and select the imported symbol.
+20. Open symbol properties (`File > Symbol Properties...`)
+21. Click the footprint field, then select the browse button
+22. Choose the footprint now imported into the SWLib footprint library
+23. Close the symbol properties panel and save.
+
+After importing your part (and saving everything) commit your changes in the `SW-KicadLibrary` repo and push.
 
 ## Creating a New Project
 
