@@ -118,9 +118,18 @@ After creating the symbol, determine if you need to create a footprint. KiCad's 
 
 Optionally, you can add a 3D model to a footprint.
 
-TODO: Guide.
+1. Create or download a 3D mode. Save it as a step or stl file in `SW-KicadLibrary/SWLib.3d`. Name it the same as the part.
+2. Open the footprint editor and select your part.
+3. Edit footprint properties (`File > Footprint Properties...`)
+4. Select the 3D models tab
+5. Click the plus button and type the following. **Never use the browse feature to select a 3d model!** Browse tool uses absolute paths, which will break the model on other people's systems.
+    ```
+    ../../SWLib.3d/[FILE].step
+    ```
+6. Replace `[FILE]` with the name of the step file. **This is case sensitive!**.
+7. Close the properties panel and save the footprint.
 
-After creating your part (and saving everything) commit your changes in the SW-Kicad-Libraries repo and push.
+After creating your part (and saving everything) commit your changes in the `SW-KicadLibrary` repo and push.
 
 ### Importing Downloaded Parts
 
