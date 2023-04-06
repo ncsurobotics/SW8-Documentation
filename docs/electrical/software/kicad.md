@@ -144,12 +144,26 @@ Note that you will need an account to use any of these services.
 1. When downloading a model, download symbol and footprint. If a 3D model is available, download it too.
 2. After downloading, follow the instructions below depending on where you downloaded the model from. Note that if a 3D model was not available, the 3D model file will be missing.
 
+    ??? custom "SamacSys"
+        The downloaded file will be a `.zip` file. Extract it.Locate the following three files.
+
+        - Symbol: `[PART]/KiCad/[PART].kicad_sym` (older parts may only have a `.lib` file. This works too.)
+        - Footprint: `[PART]/KiCad/[PACKAGE].kicad_mod`
+        - 3D Model: `[PART]/3D/[PART].stp`
+
     ??? custom "UltraLibrarian"
         The downloaded file will be a `.zip` file. Extract it.Locate the following three files.
 
         - Symbol: `KiCAD/[NAME]/[NAME].lib`
         - Footprint: `KiCAD/[NAME]/footprints.pretty/[NAME].kicad_mod`
         - 3D Model: `[NAME]/STEP/[NAME].step`
+
+    ??? custom "SnapEDA"
+        The downloaded file will be a `.zip` file. Extract it.Locate the following three files.
+
+        - Symbol: `[PART].kicad_sym`
+        - Footprint: `[PART].kicad_mod`
+        - 3D Model: `[PART].step`
 
 3. Open KiCad's symbol editor
 4. Find SWLib in the panel on the left.
@@ -161,14 +175,14 @@ Note that you will need an account to use any of these services.
 10. Right click "SWLib" and choose "Import Footprint..."
 11. Choose the footprint file (`.kicad_mod`) described above.
 12. Save into SWLib
-13. Copy the 3D model file (`.step` file described above) to SWLib. This must be copied to wherever you cloned SWLib. Paste the `.step` file into `SW-KicadLibrary/SWLib.3d`
+13. Copy the 3D model file (`.step` / `.stp` file described above) to SWLib. This must be copied to wherever you cloned SWLib. Paste the `.step` file into `SW-KicadLibrary/SWLib.3d`
 14. In the footprint editor, edit footprint properties (`File > Footprint Properties...`)
 15. Select the 3D models tab
 16. Click the plus button and type the following. **Never use the browse feature to select a 3d model!** Browse tool uses absolute paths, which will break the model on other people's systems.
     ```
     ../../SWLib.3d/[FILE].step
     ```
-17. Replace `[FILE]` with the name of the step file. **This is case sensitive!**.
+17. Replace `[FILE]` with the name of the step file. **This is case sensitive!**. Change `step` to a different suffix if the file uses a different suffix.
 18. Close the properties panel and save the footprint.
 19. Go back to the symbol editor and select the imported symbol.
 20. Open symbol properties (`File > Symbol Properties...`)
