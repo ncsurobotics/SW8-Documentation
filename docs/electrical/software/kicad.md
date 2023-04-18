@@ -227,7 +227,7 @@ TODO
 
 ### PCB Setup
 
-It is generally necessary to setup some board stackup parameters (specificaly the number of copper layers) before starting the PCB. In order to make running DRCs later, it is best to import board settings from one of the [SW-KiCad-Templates](https://github.com/ncsurobotics/SW-KiCad-Templates/tree/main). These templates are based on PCB manufacturer board stackups and include design rules. Specifics (such as board color, default item sizes, etc) can be customized after importing a template. To import a template, follow the steps listed below
+It is generally necessary to setup some board stackup parameters (specificaly the number of copper layers) before starting the PCB. In order to make running DRCs later, it is best to import board settings from one of the [SW-KiCadTemplates](https://github.com/ncsurobotics/SW-KiCadTemplates/tree/main). These templates are based on PCB manufacturer board stackups and include design rules. Specifics (such as board color, default item sizes, etc) can be customized after importing a template. To import a template, follow the steps listed below
 
 1. Download a zip of the repo and extract the zip (or just clone it)
 2. Open your project in KiCad
@@ -265,4 +265,5 @@ TODO
 - Mounting holes
 - Text size for silkscreen: width == height
 - Adding images to front and back silkscreen
+- Symbol table management and custom fields (part number field)
 -->
