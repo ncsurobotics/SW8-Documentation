@@ -262,4 +262,5 @@ TODO
 - "Flat" multi page schematic
 - Note on using "HandSolder" footprints
 - Bulk footprint assignments
+- Mounting holes
 -->
