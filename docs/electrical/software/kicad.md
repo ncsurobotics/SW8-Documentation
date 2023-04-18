@@ -264,4 +264,5 @@ TODO
 - Bulk footprint assignments
 - Mounting holes
 - Text size for silkscreen: width == height
+- Adding images to front and back silkscreen
 -->
