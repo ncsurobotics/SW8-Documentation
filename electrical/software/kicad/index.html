@@ -15,7 +15,7 @@
         <link rel="next" href="../../connectors/crimping/">
       
       <link rel="icon" href="../../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.402914a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7a7fce14.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
@@ -527,6 +527,13 @@
           <li class="md-nav__item">
   <a href="#assign-footprints" class="md-nav__link">
     Assign footprints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-setup" class="md-nav__link">
+    PCB Setup
   </a>
   
 </li>
@@ -1264,6 +1271,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#pcb-setup" class="md-nav__link">
+    PCB Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#pcb-layout-routing" class="md-nav__link">
     PCB Layout &amp; Routing
   </a>
@@ -1503,7 +1517,22 @@ Note: Download links are intentionally omitted from user guide for a few reasons
 <p>TODO</p>
 <h3 id="assign-footprints">Assign footprints</h3>
 <p>TODO</p>
+<h3 id="pcb-setup">PCB Setup</h3>
+<p>It is generally necessary to setup some board stackup parameters (specificaly the number of copper layers) before starting the PCB. In order to make running DRCs later, it is best to import board settings from one of the <a href="https://github.com/ncsurobotics/SW-KiCad-Templates/tree/main">SW-KiCad-Templates</a>. These templates are based on PCB manufacturer board stackups and include design rules. Specifics (such as board color, default item sizes, etc) can be customized after importing a template. To import a template, follow the steps listed below</p>
+<ol>
+<li>Download a zip of the repo and extract the zip (or just clone it)</li>
+<li>Open your project in KiCad</li>
+<li>Open your PCB</li>
+<li>Open Board Setup (<code>File &gt; Board Setup</code>)</li>
+<li>Click the button on the bottom left labeled "Import Settings from Another Board"</li>
+<li>Choose the <code>kicad_pcb</code> file for the template you want to use. Which template is used should depend on how you plan to design the PCB (number of layers, impedance control, etc) as well as who you plan to have manufacture the PCB.</li>
+<li>After selecting a template file, click the "Select All" button (rarely will you want to import only some settings)</li>
+<li>Click "Import Settings"</li>
+<li>Click "OK" to close the board setup dialog</li>
+<li>Save the PCB file</li>
+</ol>
 <h3 id="pcb-layout-routing">PCB Layout &amp; Routing</h3>
+<p><strong>Always work in mil not mm grid!</strong></p>
 <p>TODO</p>
 <h3 id="design-rules-check-drc">Design Rules Check (DRC)</h3>
 <p>TODO</p>
@@ -1553,7 +1582,7 @@ Note: Download links are intentionally omitted from user guide for a few reasons
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.b78d2936.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.407015b8.min.js"></script>
       
         <script src="../../../javascript/zooming.min.js"></script>
       
