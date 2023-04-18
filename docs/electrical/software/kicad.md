@@ -263,4 +263,5 @@ TODO
 - Note on using "HandSolder" footprints
 - Bulk footprint assignments
 - Mounting holes
+- Text size for silkscreen: width == height
 -->
