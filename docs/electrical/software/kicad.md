@@ -225,7 +225,25 @@ TODO
 TODO
 
 
+### PCB Setup
+
+It is generally necessary to setup some board stackup parameters (specificaly the number of copper layers) before starting the PCB. In order to make running DRCs later, it is best to import board settings from one of the [SW-KiCad-Templates](https://github.com/ncsurobotics/SW-KiCad-Templates/tree/main). These templates are based on PCB manufacturer board stackups and include design rules. Specifics (such as board color, default item sizes, etc) can be customized after importing a template. To import a template, follow the steps listed below
+
+1. Download a zip of the repo and extract the zip (or just clone it)
+2. Open your project in KiCad
+3. Open your PCB
+4. Open Board Setup (`File > Board Setup`)
+5. Click the button on the bottom left labeled "Import Settings from Another Board"
+6. Choose the `kicad_pcb` file for the template you want to use. Which template is used should depend on how you plan to design the PCB (number of layers, impedance control, etc) as well as who you plan to have manufacture the PCB.
+7. After selecting a template file, click the "Select All" button (rarely will you want to import only some settings)
+8. Click "Import Settings"
+9. Click "OK" to close the board setup dialog
+10. Save the PCB file
+
+
 ### PCB Layout & Routing
+
+**Always work in mil not mm grid!**
 
 TODO
 
