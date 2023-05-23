@@ -212,7 +212,11 @@ TODO
 
 **Always use a 50mil grid in the schematic editor!** If absolutely necessary, a 25mil grid can be used occasionally, but try to avoid doing so.
 
-TODO
+TODO: General schematic work
+
+TODO: Symbol table conventions and custom part number field
+
+TODO: Net label and power port behavior across multiple schematic sheets
 
 
 ### Electrical Rules Check
@@ -222,12 +226,12 @@ TODO
 
 ### Assign footprints
 
-TODO
+TODO (note bulk procedures too)
 
 
 ### PCB Setup
 
-It is generally necessary to setup some board stackup parameters (specificaly the number of copper layers) before starting the PCB. In order to make running DRCs later, it is best to import board settings from one of the [SW-KiCadTemplates](https://github.com/ncsurobotics/SW-KiCadTemplates/tree/main). These templates are based on PCB manufacturer board stackups and include design rules. Specifics (such as board color, default item sizes, etc) can be customized after importing a template. To import a template, follow the steps listed below
+It is generally necessary to setup some board stackup parameters (specifically the number of copper layers) before starting the PCB. In order to make running DRCs later, it is best to import board settings from one of the [SW-KiCadTemplates](https://github.com/ncsurobotics/SW-KiCadTemplates/tree/main). These templates are based on PCB manufacturer board stackups and include design rules. Specifics (such as board color, default item sizes, etc) can be customized after importing a template. To import a template, follow the steps listed below
 
 1. Download a zip of the repo and extract the zip (or just clone it)
 2. Open your project in KiCad
@@ -250,20 +254,52 @@ TODO
 
 ### Design Rules Check (DRC)
 
-TODO
+1. Setup design rules in Boards Setup (`File > Board Setup`). Fill in options for `Design Rules > Constraints` and change defaults in `Text & Graphics > Defaults` as applicable. **Skip this if you imported board settings from one of the template boards!** Close Board Setup dialog when done.
+2. Open the design rules checker dialog (`Inspect > Design Rules Checker`)
+3. At the top, select only "Refill all zones before performing DRC"
+4. Make sure both errors and warnings are shown (checkboxes near bottom of the dialog)
+5. Run the DRC
+6. Fix any errors.
+7. Fix or waive warnings as warranted.
+
 
 
 
 ## Tips and Tricks
 
-TODO
+### Flat multi-page Schematics
 
-<!--
-- "Flat" multi page schematic
-- Note on using "HandSolder" footprints
-- Bulk footprint assignments
-- Mounting holes
-- Text size for silkscreen: width == height
-- Adding images to front and back silkscreen
-- Symbol table management and custom fields (part number field)
--->
+There are two common ways of doing multi-page schematics: Hierarchical and flat. Hierarchical design embeds one sheet as a block in another. Connections between sheets are made using ports. Flat designs have multiple sheets (all considered top level). Connections between sheets are made by naming nets the same name. **AquaPack prefers to use Hierarchical design over flat design practices**.
+
+In rare cases it may be acceptable to use a flat design, however KiCad doesn't really support them well. You still have to create a top level schematic and add all your sheets as blocks to it. However you just won't add ports or make connections. The top level sheet just acts as a container.
+
+
+### HandSolder Footprints
+
+The builtin KiCad footprint libraries often have two variants of footprints (eg for resistors, capacitors, etc). One is often suffixed "HandSolder". These footprints use elongated pads that make it easier to solder components to the board by hand. These are generally preferred for our use cases.
+
+
+### Mounting Holes
+
+Do **not** use vias or manually placed pads for mounting holes. This will lead to DRC warnings / errors. Instead use footprints from the builtin "MountingHole" library. These footprints can be added to the PCB without corresponding symbols in the schematic by using the "Add Footprint" option in the PCB editor (`Place > Add Footprint`).
+
+
+### Silkscreen Text size
+
+Most manufacturers specify limits on character height and stroke width. KiCad also wants a character width. Always make this equal the the height of your characters!
+
+
+### Adding Images to Silkscreen
+
+1. Open the project you want to add images to
+2. In KiCad's project window open the "Image Converter"
+3. Click Load Image and choose the image you want to add. Monochrome bitmaps work well. Other image formats work, but you may need to adjust the black / white threshold.
+4. Choose the size of the image in "Output Size" (if not sure what size you want guess; trial and error is the way to go)
+5. Choose "Footprint (.kicad_mod file)" for Output Format
+6. Make sure "Front Silkscreen" is selected for the layer
+7. Click "Export to Clipboard" (there is generally no reason to save graphics as symbol files)
+8. Open the PCB (it is recommended to still leave the image converter window open for now too)
+9. Paste the symbol (Ctrl+V for normal people or CMD+V on mac) and place it where you want on the board
+10. To place on the back of the board, press the F key with the graphic selected.
+11. If the size is wrong, do not attempt to resize it in the PCB. Go back to the image converter window, change the size and export to clipboard again. Paste it into the PCB again. Repeat as needed.
+12. Once the graphic is paced where you want it, double click it to open its properties (footprint properties) and uncheck the "Show" box next to "Reference Designator". Click OK to close the dialog.
