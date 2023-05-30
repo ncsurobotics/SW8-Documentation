@@ -42,7 +42,7 @@ nav:
       - Fischers: electrical/connectors/fischers.md
       - Waterproof Splicing: electrical/connectors/waterproof_splice.md
     - System Design:
-      - Overview (MOAB / FOAB): electrical/sysdesign/moab.md
+      - Overview: electrical/sysdesign/overview.md
       - Power System: electrical/sysdesign/moab_power.md
       - Acoustics System: electrical/sysdesign/acoustics.md
       - Cameras: electrical/sysdesign/cameras.md
