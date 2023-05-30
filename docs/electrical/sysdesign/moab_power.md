@@ -27,14 +27,15 @@ Currently, there is no voltage or current monitor. However, there are plans to a
 
 ### Power Switching
 
-TODO: System switch
+There are two Solid State Relays (SSRs) used to switch power on SeaWolf VIII. The first one is the "System Power SSR". The output of this SSR is used to power the main system (everything except thrusters). This is unregulated voltage (battery voltage level).
 
-TODO: MEB circuit
+The second SSR is the "Thruster Power SSR". This switches power on and off to the thrusters. This SSR is powered through the system SSR. Thus, if the system is off the thrusters are too. However the system can be switched on with the thrusters off. This allows the thrusters to be disconnected from power when the vehicle is in the "killed" state. Thrusters are powered when the vehicle is in the "armed" state.
 
-TODO: System power rail powers thruster SSR and all other regulators for computer, boards, etc
+The SSRs are controlled by the MEB. The system SSR is connected to the system power switch. This switch pulls the control line to GND to power the system on. Once the MEB boots, a GPIO holds this line LOW to keep the system on. To turn the system off, the system switch placed in the "off" position will pull this line high, thus turning off the SSR. See the [MEB](../boards/meb.md) page for more details.
 
-TODO: Thruster switching and killswitch (mention why no low-side switching)
+Similarly, the MEB controls the Thruster SSR. The control signal for this, however, is not controlled by MEB software (it just runs through traces on the MEB). Normally, this control line is floating. However, the physical killswitch is connected between this line and GND. When the killswitch is closed, the line is pulled low and the thruster SSR is on. Thus the thrusters have power. When the killswitch is open, the line is floating and the thruster SSR is off.
 
+Additionally, on newer versions of MEB (v1.2+) there is a software kill switch MOSFET. This mostfet is in series with the killswitch. The MOSFET is controlled by a GPIO signal directly from the Jetson. This acts as a "software kill". Both the software arm (GPIO high) and hardware arm (killswitch closed) must occur for the thrster SSR to be on. Again, see the [MEB](../boards/meb.md) page for more details.
 
 
 ## Power Distribution
