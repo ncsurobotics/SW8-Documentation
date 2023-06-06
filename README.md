@@ -2,8 +2,6 @@
 
 Documentation for SeaWolf VIII
 
-TODO: Link to gh pages documentation
-
 
 ## Required Tools
 
