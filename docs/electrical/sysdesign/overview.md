@@ -8,6 +8,8 @@ There are two such boards, however the two are rarely identical. The idea is tha
 
 For example, if MOAB is stable and used in the robot, a new board could be added to FOAB. Once added and verified, FOAB and MOAB would be swapped making FOAB the stable system. MOAB would then be updated to match FOAB's changes and the next set of changes would occur on MOAB.
 
+TODO: Picture
+
 ## System Block Diagram
 
 ![](../img/moab_diagram.jpg){: }
