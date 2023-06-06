@@ -46,6 +46,7 @@ nav:
       - Power System: electrical/sysdesign/moab_power.md
       - Acoustics System: electrical/sysdesign/acoustics.md
       - Cameras: electrical/sysdesign/cameras.md
+      - Batteries: electrical/sysdesign/batteries.md
       - Endcap Pinout: electrical/sysdesign/endcap.md
     - Boards:
       - Main Electronics Board (MEB): electrical/boards/meb.md

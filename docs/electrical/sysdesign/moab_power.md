@@ -1,7 +1,4 @@
 
-*Note that this page is currently an outline and most of the content is not yet written.*
-
-
 SeaWolf VIII's (SW8) power system consists of several components layed out on and wired together on MOAB / FOAB. There is no central "power system" PCB / board on SW8. The components of the power system are described here. The boards involved have more detail on their pages under the "Boards" section.
 
 ## Power Input
