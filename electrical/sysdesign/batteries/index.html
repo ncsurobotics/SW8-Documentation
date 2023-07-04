@@ -13,7 +13,7 @@
     
     
       
-        <title>Acoustics Distribution Board - AquaPack Robotics SW8 Documentation</title>
+        <title>Batteries - AquaPack Robotics SW8 Documentation</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#power-requirements" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -92,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Acoustics Distribution Board
+              Batteries
             
           </span>
         </div>
@@ -538,12 +543,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" checked>
       
       
       
@@ -566,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sysdesign/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -580,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sysdesign/moab_power/" class="md-nav__link">
+      <a href="../moab_power/" class="md-nav__link">
         Power System
       </a>
     </li>
@@ -594,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sysdesign/acoustics/" class="md-nav__link">
+      <a href="../acoustics/" class="md-nav__link">
         Acoustics System
       </a>
     </li>
@@ -608,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sysdesign/cameras/" class="md-nav__link">
+      <a href="../cameras/" class="md-nav__link">
         Cameras
       </a>
     </li>
@@ -620,11 +627,62 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../sysdesign/batteries/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Batteries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Batteries
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#power-requirements" class="md-nav__link">
+    Power Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#old-batteries" class="md-nav__link">
+    Old Batteries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-batteries" class="md-nav__link">
+    New Batteries
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -636,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sysdesign/endcap/" class="md-nav__link">
+      <a href="../endcap/" class="md-nav__link">
         Endcap Pinout
       </a>
     </li>
@@ -655,14 +713,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
       
       
       
@@ -685,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../meb/" class="md-nav__link">
+      <a href="../../boards/meb/" class="md-nav__link">
         Main Electronics Board (MEB)
       </a>
     </li>
@@ -699,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../msb/" class="md-nav__link">
+      <a href="../../boards/msb/" class="md-nav__link">
         Manipulation Systems Board (MSB)
       </a>
     </li>
@@ -713,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lbb/" class="md-nav__link">
+      <a href="../../boards/lbb/" class="md-nav__link">
         Load Balancing Board (LBB)
       </a>
     </li>
@@ -727,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../controlboard/" class="md-nav__link">
+      <a href="../../boards/controlboard/" class="md-nav__link">
         Control Board
       </a>
     </li>
@@ -739,19 +795,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../boards/acoustics_dist/" class="md-nav__link">
         Acoustics Distribution Board
       </a>
-      
     </li>
   
 
@@ -763,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../acoustics_single_chan/" class="md-nav__link">
+      <a href="../../boards/acoustics_single_chan/" class="md-nav__link">
         Acoustics Single Channel Board
       </a>
     </li>
@@ -1029,6 +1077,35 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#power-requirements" class="md-nav__link">
+    Power Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#old-batteries" class="md-nav__link">
+    Old Batteries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-batteries" class="md-nav__link">
+    New Batteries
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1041,9 +1118,68 @@
                 
 
 
-  <h1>Acoustics Distribution Board</h1>
+  <h1>Batteries</h1>
 
-<p><em>Note that this page is currently an outline and most of the content is not yet written.</em></p>
+<h2 id="power-requirements">Power Requirements</h2>
+<p>SeaWolf VIII's most power consuming components are the thrusters. It uses 8 BlueRobotics T200 thrusters. The following information was sourced from BlueRobotic's site for the T200 thrusters</p>
+<table>
+<thead>
+<tr>
+<th>Nominal Voltage</th>
+<th>Full Throttle Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10V</td>
+<td>14A</td>
+</tr>
+<tr>
+<td>12V</td>
+<td>17A</td>
+</tr>
+<tr>
+<td>14V</td>
+<td>21A</td>
+</tr>
+<tr>
+<td>16V</td>
+<td>24A</td>
+</tr>
+<tr>
+<td>20V</td>
+<td>32A</td>
+</tr>
+</tbody>
+</table>
+<p>It is not realistic that all 8 thrusters will be running full throttle at all times. Thus, these current numbers determine how individual thrusters should be fused, not total system power requirements. </p>
+<p>Note that one thruster's motion will also result in some amount of battery voltage drop, thus a second thruster will have a lower "nominal" voltage, and so on for all 8 thrusters. This imposes a limit on max system current draw.</p>
+<p>For physical size and current draw reasons, it was decided to use 4S LiPo batteries (nominal 14.8V).</p>
+<p>Based on charts provided by BlueRobotics, it was predicted that SW8's max current draw would be between 40 and 60A. This was later experimentally determined to be an over estimate (all thrusters at full power was measured to be approx 38A steady state).</p>
+<p>Battery selection was based on the 60A number. This motivated the 2 battery architecture along with a desire for longer run times. Physical size constrained us to 10000mAh batteries. We speculated that a 30A steady-state current draw would be possible while in motion at competition speeds. Thus 10Ah / 30A = 20minutes of runtime per battery. With 2 batteries this would allow 40 minutes of runtime.</p>
+<p><strong>Please not that the 30A was an over estimate. In practice we seem  to get about 2 hours of runtime off SW8 while holding depth and moving at translational speeds of 30%, which is a reasonable speed for competition runs.</strong></p>
+<h2 id="old-batteries">Old Batteries</h2>
+<p><img alt="" src="../../img/old_battery.jpg" /></p>
+<p>Originally, SW8 used <a href="https://hobbyking.com/en_us/turnigy-graphene-professional-10000mah-4s-15c-lipo-pack-w-xt90.html">Turnigy Graphene 4S 10000mAH LiPo Battery Packs</a>. These batteries work well enough, however there are several concerns / potential issues</p>
+<ol>
+<li>"Cheap" LiPo makers (such as Turnigy) often use reject cells. These are usually not safety concerns, but will result in significantly poorer performance than advertised.</li>
+<li>Cheap LiPos often over spec their batteries (discharge and charge rate specs).</li>
+<li>The cells used in cheaper batteries often change over time in the same product. Thus, it is usually difficult or impossible to get a proper MSDS for the batteries without opening one of the same age up. This is a potentially hazardous process and renders the battery useless.</li>
+<li>Manuals and information is often hard to find</li>
+<li>Usually, these are soft shell LiPo batteries. This is less desirable for our use case as it would provide less protection from moisture in the event of a leak than a hard shell LiPo case.</li>
+</ol>
+<p>For these reasons, as well as the age of the batteries, it was decided to transition to a new set of batteries without these issues. The old Turnigy batteries are still kept as a backup set of batteries as they show no signs of concerning wear.</p>
+<h2 id="new-batteries">New Batteries</h2>
+<p><img alt="" src="../../img/new_battery.jpg" /></p>
+<p>The newer batteries were chose to avoid issues with the previous ones. The selection criteria were as follows</p>
+<ol>
+<li>Manufacturer must provide a MSDS or exact cell model number</li>
+<li>Manufacturer must provide all manuals downloadable before battery purchase</li>
+<li>Manufacturer manuals must include specs, handling and safety information, as well as disposal information.</li>
+<li>Ideally, hard shell LiPo battery</li>
+</ol>
+<p>The selected batteries currently in use are <a href="https://genstattu.com/gens-ace-advanced-10000mah-15-2v-100c-4s2p-hardcase-lipo-battery-pack-61-with-ec5-plug/">Gens ace Advanced 10000mAh HardCase Lipo Battery Packs</a>.</p>
+<p>Gens ace provides all required information on the batteries, and are generally regarded as being one of the better LiPo manufacturers in hobby communities (generally, they don't over spec batteries and seem to not use reject cells). The batteries in question are still 4S 10000mAh batteries and physically fit in the same battery hulls as the old batteries used. They are also hard shell LiPos with some additional safety features builtin (over discharge warning, imbalance warning, etc).</p>
 
               
             </article>
@@ -1057,7 +1193,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../controlboard/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Control Board" rel="prev">
+        <a href="../cameras/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cameras" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1066,20 +1202,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Control Board
+              Cameras
             </div>
           </div>
         </a>
       
       
         
-        <a href="../acoustics_single_chan/" class="md-footer__link md-footer__link--next" aria-label="Next: Acoustics Single Channel Board" rel="next">
+        <a href="../endcap/" class="md-footer__link md-footer__link--next" aria-label="Next: Endcap Pinout" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Acoustics Single Channel Board
+              Endcap Pinout
             </div>
           </div>
           <div class="md-footer__button md-icon">
