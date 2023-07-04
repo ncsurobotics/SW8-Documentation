@@ -243,6 +243,7 @@ It is generally necessary to setup some board stackup parameters (specifically t
 8. Click "Import Settings"
 9. Click "OK" to close the board setup dialog
 10. Save the PCB file
+11. **Restart KiCad (Close fully and reopen the project). Skipping this step can cause library issues until KiCad is restarted.**
 
 
 ### PCB Layout & Routing
@@ -281,7 +282,7 @@ The builtin KiCad footprint libraries often have two variants of footprints (eg 
 
 ### Mounting Holes
 
-Do **not** use vias or manually placed pads for mounting holes. This will lead to DRC warnings / errors. Instead use footprints from the builtin "MountingHole" library. These footprints can be added to the PCB without corresponding symbols in the schematic by using the "Add Footprint" option in the PCB editor (`Place > Add Footprint`).
+Do **not** use vias or manually placed pads for mounting holes. This will lead to DRC warnings / errors. Instead use footprints from the builtin "MountingHole" library. These footprints can be added to the PCB without corresponding symbols in the schematic by using the "Add Footprint" option in the PCB editor (`Place > Add Footprint`). After adding the footprint, make sure to edit its properties and check the "Not in schematic" box.
 
 
 ### Silkscreen Text size
@@ -303,3 +304,16 @@ Most manufacturers specify limits on character height and stroke width. KiCad al
 10. To place on the back of the board, press the F key with the graphic selected.
 11. If the size is wrong, do not attempt to resize it in the PCB. Go back to the image converter window, change the size and export to clipboard again. Paste it into the PCB again. Repeat as needed.
 12. Once the graphic is paced where you want it, double click it to open its properties (footprint properties) and uncheck the "Show" box next to "Reference Designator". Click OK to close the dialog.
+13. Note that when you run the DRC check, there will be a footprint warning about the graphic. Just exclude the violation.
+
+### Thermal Relief Connections to Pads
+
+When connecting a zone to a pad, it will be thermally relieved by default. This means it will be connected with "spokes" instead of solid copper. This is usually desirable, however it can be disabled in the properties of the zone if you need to or specific cases (usually only necessary for high current or if using copper on the board as a heatsink).
+
+### Other Useful Options / Features of PCB Editor
+
+- You can fill or unfill all copper zones (sometimes called "polygons" or "pours" or "planes") by using `Edit > Fill All Zones` and `Edit > Unfill All Zones`. Unfilling zones is useful while working on the board. Filling them lets you see how the zone will be filled after updating the zone itself.
+- You can flip the board view using `View > Flip Board View`. This is sometimes useful if working on the back of the board. This pairs well with the layer presets on the right below the layer selector (for example, select the all back layers preset).
+- When editing tracks (traces) you can select one part and use the "U" and "I" keys to select more or less of the track.
+- You can bulk edit fonts of silkscreen text using `Edit > Edit Text and Graphics Properties...`.
+- You can automatically cleanup traces and vias (remove redundant segments, etc) using `Tools > Cleanup Tracks and Vias...`. However, be careful with the "Delete redundant vias" option. This may delete vias you wanted multiple of for current or heat reasons.
