@@ -1,6 +1,4 @@
 
-*Note that this page is currently an outline and most of the content is not yet written.*
-
 The Load Balancing Board (LBB) is used to safely connect two LiPo batteries in parallel. 
 
 While it is technically ok to connect two identical LiPo batteries in parallel without any additional circuitry, care must be taken to ensure the batteries are charged to the exact same level and perform comparably (typically they should be of the same batch and exact same battery model).
@@ -66,7 +64,7 @@ The MOSFET must be selected with the following considerations
 - Capable of battery voltage from source to drain
 - Capable of battery voltage from drain to source
 
-Selected was the IXTN660N04T4 MOSFET (small 0.85 Ohm on resistance and capable of several hundred amps).
+Selected was the IXTN660N04T4 MOSFET (small 0.85 mOhm on resistance and capable of several hundred amps).
 
 Due to the current required, the LBB is designed to use an off-board MOSFET. The current to / through the MOSFET runs through high guage wires. The LBB itself is a PCB with the MOSFET control circuitry.
 
