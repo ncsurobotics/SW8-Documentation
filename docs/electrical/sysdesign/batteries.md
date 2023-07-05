@@ -32,11 +32,10 @@ Battery selection was based on the 60A number. This motivated the 2 battery arch
 
 Originally, SW8 used [Turnigy Graphene 4S 10000mAH LiPo Battery Packs](https://hobbyking.com/en_us/turnigy-graphene-professional-10000mah-4s-15c-lipo-pack-w-xt90.html). These batteries work well enough, however there are several concerns / potential issues
 
-1. "Cheap" LiPo makers (such as Turnigy) often use reject cells. These are usually not safety concerns, but will result in significantly poorer performance than advertised.
-2. Cheap LiPos often over spec their batteries (discharge and charge rate specs).
-3. The cells used in cheaper batteries often change over time in the same product. Thus, it is usually difficult or impossible to get a proper MSDS for the batteries without opening one of the same age up. This is a potentially hazardous process and renders the battery useless.
-4. Manuals and information is often hard to find
-5. Usually, these are soft shell LiPo batteries. This is less desirable for our use case as it would provide less protection from moisture in the event of a leak than a hard shell LiPo case.
+1. "Cheap" LiPo makers often use reject cells. These are usually not safety concerns, but will result in significantly poorer performance than advertised. There are some indications that these batteries fall in this category.
+2. The cells used in cheaper batteries often change over time in the same product. Thus, it is usually difficult or impossible to get a proper MSDS for the batteries without opening one of the same age up. This is a potentially hazardous process and renders the battery useless.
+3. Manuals and information is often hard to find
+4. These are soft shell LiPo batteries. This is less desirable for our use case as it would provide less protection from moisture in the event of a leak than a hard shell LiPo case.
 
 For these reasons, as well as the age of the batteries, it was decided to transition to a new set of batteries without these issues. The old Turnigy batteries are still kept as a backup set of batteries as they show no signs of concerning wear.
 
