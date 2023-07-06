@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#design" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -706,9 +711,65 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Manipulation Systems Board (MSB)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Manipulation Systems Board (MSB)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pinout" class="md-nav__link">
+    Pinout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software" class="md-nav__link">
+    Software
+  </a>
+  
+    <nav class="md-nav" aria-label="Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-commands" class="md-nav__link">
+    Software Commands
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1043,6 +1104,48 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pinout" class="md-nav__link">
+    Pinout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software" class="md-nav__link">
+    Software
+  </a>
+  
+    <nav class="md-nav" aria-label="Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-commands" class="md-nav__link">
+    Software Commands
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1057,7 +1160,59 @@
 
   <h1>Manipulation Systems Board (MSB)</h1>
 
-<p><em>Note that this page is currently an outline and most of the content is not yet written.</em></p>
+<p><img alt="" src="../../img/msb.jpg" /></p>
+<p>The MSB is used to control mechanical subsystems such as torpedo and dropper. Eventually, a grabber arm may be integrated necessitating another revision of the MSB, however this is not designed as of now.</p>
+<p>Torpedo launchers are controlled using servo motors and droppers are controlled using electromagnets. The MSB is designed to control two of each.</p>
+<p>The MSB is connected to the MEB's I2C bus, thus all communication to the MSB goes through the MEB.</p>
+<h2 id="design">Design</h2>
+<p><img alt="" src="../../img/msb_labeled.jpg" /></p>
+<p>The MSB is built around and MSP430FR2355 chip. This chip is used to generate two PWM signals for the torpedo launchers. It also acts as an I2C follower to communicate with the MEB. Note that two I2C headers are included to allow daisy chaining of I2C devices.</p>
+<p>The MSB also includes two N-Channel MOSFETs to control power to the dropper's electromagnets.</p>
+<p>The power for the MSB comes from an external 5V source (for now, this uses a UBEC). It includes an onboard 3.3V regulator (LDO 5V to 3.3V) to power the MSP430.</p>
+<p>Finally, a "Debug" header is included to allow connecting an ez-FET debug probe (from a launchpad board) to the MSB for programming.</p>
+<h2 id="pinout">Pinout</h2>
+<p><img alt="" src="../../img/msb_pinout.jpg" /></p>
+<h2 id="software">Software</h2>
+<p>The MSB firmware is written using the MSP430 Arduino core. </p>
+<h3 id="software-commands">Software Commands</h3>
+<p>Each command to MSB is a single byte command (sent in one I2C write from MEB to MSB). The following commands are implemented</p>
+<table>
+<thead>
+<tr>
+<th>Command Name</th>
+<th>Command Byte</th>
+<th>Command Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RESET</td>
+<td>0x00</td>
+<td>Reset all systems (hold marker for droppers and torpedoes not fired)</td>
+</tr>
+<tr>
+<td>D1_TRIG</td>
+<td>0x01</td>
+<td>Trigger dropper 1 (release marker)</td>
+</tr>
+<tr>
+<td>D2_TRIG</td>
+<td>0x02</td>
+<td>Trigger dropper 2 (release marker)</td>
+</tr>
+<tr>
+<td>T1_TRIG</td>
+<td>0x03</td>
+<td>Fire torpedo 1</td>
+</tr>
+<tr>
+<td>T2_TRIG</td>
+<td>0x04</td>
+<td>Fire torpedo 2</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: Torpedo "fired" and "reset" positions for the servo are defined in the MSB software. These can be changed, however it is usually easier to assemble the torpedo such that the positions are correct. This is done by attaching the arm to the top of the servo in the correct orientation for a known state. For example, use the MSB to "reset" the torpedoes. Then place the arm on the servo so the torpedo is not firing.</em></p>
 
               
             </article>
