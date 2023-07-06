@@ -9,13 +9,20 @@ The MSB is connected to the MEB's I2C bus, thus all communication to the MSB goe
 
 ## Design
 
-The MSB is built around and MSP430FR2355 chip. This chip is used to generate two PWM signals for the torpedo launchers. It also acts as an I2C follower to communicate with the MEB.
+![](../img/msb_labeled.jpg)
+
+The MSB is built around and MSP430FR2355 chip. This chip is used to generate two PWM signals for the torpedo launchers. It also acts as an I2C follower to communicate with the MEB. Note that two I2C headers are included to allow daisy chaining of I2C devices.
 
 The MSB also includes two N-Channel MOSFETs to control power to the dropper's electromagnets.
 
 The power for the MSB comes from an external 5V source (for now, this uses a UBEC). It includes an onboard 3.3V regulator (LDO 5V to 3.3V) to power the MSP430.
 
 Finally, a "Debug" header is included to allow connecting an ez-FET debug probe (from a launchpad board) to the MSB for programming.
+
+
+## Pinout
+
+![](../img/msb_pinout.jpg)
 
 
 ## Software
