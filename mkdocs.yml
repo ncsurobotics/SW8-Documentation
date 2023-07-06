@@ -59,6 +59,7 @@ nav:
       - Acoustics Distribution Board: electrical/boards/acoustics_dist.md
       - Acoustics Single Channel Board: electrical/boards/acoustics_single_chan.md
       - Standalone Leak Detector: electrical/boards/standalone_leak.md
+      - Regulator Carseat: electrical/boards/regulator_carseat.md
     - Legacy Design:
       - Power System: electrical/legacy/powersys.md
       - Control System: electrical/legacy/controlsys.md
