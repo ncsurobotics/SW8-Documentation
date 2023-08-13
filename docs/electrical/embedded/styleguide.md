@@ -9,6 +9,7 @@ Many of these rules are common sense and you probably are already following them
 ??? info "Revision History"
     - *Revision 0.1 by William K, 11 Jun 2023*
     - *Revision 0.2 by William K, 12 Aug 2023*
+    - *Revision 0.2.1 by William K, 12 Aug 2023*
 
 ---
 
@@ -16,7 +17,7 @@ Many of these rules are common sense and you probably are already following them
 
 ### General Rules
 #### Line Width
-1. No line width is enforced as we do not do paper code reviews. Please use your best descretion for when a line is considered too long.
+1. No line width is enforced as we do not do paper code reviews. Please use your best descretion for when a line is considered too long (if you're not sure, try to keep the longest line to around 80 characters).
 2. The preprocessor directive (```#define```) shall not be used to alter or rename any keyword or other part of the C programming language.
 3. The minimum target standard for both C and C++ is **C/C++ 11**. However, if newer versions such as 14 or 17 are available for the toolchain in use, they are preferred.
    
@@ -37,9 +38,9 @@ Many of these rules are common sense and you probably are already following them
 1. To maintain clarity of long expressions, parentheses should be used to ensure proper execution order and provide better information to maintainers.
 2. For further clarity, each side of a logical operator should be surrounded with parentheses, unless it is a single level operation.
 ```c title="Example"
-((current_depth == target_depth) && (current_depth < pool_depth))
+(current_depth == target_depth) && (current_depth < pool_depth)
 
-(soft_arm && hard_arm)
+soft_arm && hard_arm
 ```
 
 #### Common Abreviations
@@ -54,7 +55,7 @@ Many of these rules are common sense and you probably are already following them
 2. Uses of the ```continue``` keyword should be limited, but are allowed where it simplifies the code structure and makes it more legible.
 3. *The ```static``` keyword needs some though put towards its use cases, I don't know if anything needs to be defined for this.*
 4. ```const``` should be applied in all locations where appropriate. In some cases, it may be more applicable than a preprocessor directive, while the preprocessor directive may be more applicable in others.
-5. ```volatile``` should be used in all cases where a variable can be modified by anything outside of the normal control flow of the code (i.e. an ISR).
+5. ```volatile``` should be used in all cases where a variable can be modified by anything outside of the normal control flow of the code (i.e. an ISR, variables shared between RTOS threads, etc).
 
 
 ### Comment Rules
@@ -101,13 +102,12 @@ int sum(int A, int B) {
 3. Unary operators should not have a space between the operator and the operand.
 4. Structure pointer and member operators should have no whitespace on either side.
 5. Parentheses, braces, and brackets should not have an adjacent space on the interior side.
-6. Excepting the end of a line, separating commas should should be followed by one space.
-7. Semicolons should follow a preceeding statement without a space, but should always be followed by a space.
+6. Excluding the end of a line, separating commas should should be followed by one space.
+7. Semicolons should follow a preceeding statement without a space, but should always be followed by a space unless they end a line.
 8. Use whitespace to separate blocks of code from each other in a logical fashion. (William's note: to please my OCD use either 1 or 3 lines of separation depending on context, don't use two :) )
 
 #### Pointer (* and &) Operators
-1. When used with a type, such as in the case of ```pointerType name```, the pointer operator * should be appended to the type name (i.e. ```type* name```).
-2. Otherwise both operators should be written without a space on the operand side.
+1. Pointer operators should be written without a space on the operand side (i.e. ```type *name```).
 
 #### Alignment Rules
 1. TODO: Consider whether to always left align the # of a preprocessor directive, regardless of the indentation of the line
@@ -120,7 +120,8 @@ int sum(int A, int B) {
 ### Module Rules
 #### Naming Conventions
 1. File names should consist only of lower case letters, numbers, and underscores.
-2. All module names should not overlap with those of the standard library.
+2. File names are recommended to be no longer than 16 characters. Ideally file names are specific and short, like the file itself.
+3. All module names should not overlap with those of the standard library.
 TODO: content
 
 ### Data Type Rules
