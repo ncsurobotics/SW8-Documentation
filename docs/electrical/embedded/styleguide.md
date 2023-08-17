@@ -1,5 +1,5 @@
 
-*Note that this page is currently in an unfinished state and in the process of being written*
+*Note that this page is currently in the process of being written*
 
 ## Overview
 This guide follows the general outline and some of the recommendations of [*Barr Group's Embedded C Coding Standard*](https://barrgroup.com/embedded-systems/books/embedded-c-coding-standard), set forth by Michael Barr.
@@ -9,7 +9,7 @@ Many of these rules are common sense and you probably are already following them
 ??? info "Revision History"
     - *Revision 0.1 by William K, 11 Jun 2023*
     - *Revision 0.2 by William K, 12 Aug 2023*
-    - *Revision 0.2.1 by William K, 12 Aug 2023*
+    - *Revision 0.2.1 by William K, 17 Aug 2023*
 
 ---
 
@@ -22,14 +22,15 @@ Many of these rules are common sense and you probably are already following them
 3. The minimum target standard for both C and C++ is **C/C++ 11**. However, if newer versions such as 14 or 17 are available for the toolchain in use, they are preferred.
    
 #### Braces
-1. Left braces should appear on the same line as the statement they are connected with. Right braces should always be on the line after the line of code in the block if the block is more than one line.
-   
-    Should the block be only one line long for a *conditional*, the entire statement including the right brace should be placed on the same line
+1. Left braces should appear on the same line as the statement they are connected with. Right braces should always be on a new line after their associated block of code.
     ``` c title="Example"
-    if (condition) {code block;}
+    if (condition) {
+        code block;
+    }
+
     else {
-        code block line 1;
         code block line 2;
+        code block line 1;
         code block line 3;
     }
     ```
@@ -53,7 +54,7 @@ soft_arm && hard_arm
 #### Keywords
 1. The use of ```goto``` should be exceedingly limited to only cases where it is justifiably required, and no other solution can be found (including rewriting other code to make the ```goto``` unecessary).
 2. Uses of the ```continue``` keyword should be limited, but are allowed where it simplifies the code structure and makes it more legible.
-3. *The ```static``` keyword needs some though put towards its use cases, I don't know if anything needs to be defined for this.*
+3. *The ```static``` keyword needs some though put towards its use cases, I don't know if anything needs to be defined for this. - William*
 4. ```const``` should be applied in all locations where appropriate. In some cases, it may be more applicable than a preprocessor directive, while the preprocessor directive may be more applicable in others.
 5. ```volatile``` should be used in all cases where a variable can be modified by anything outside of the normal control flow of the code (i.e. an ISR, variables shared between RTOS threads, etc).
 
@@ -62,33 +63,32 @@ soft_arm && hard_arm
 1. Both single (//) and multi (/*) comment styles are considered acceptable, and should be used as applicable. When multi-line comments are used, all lines should begin with an asterisk (\*)
 2. Multi-line comments should maintain a level of indentation with the leading asterisks vertical to each other, as shown below.
 3. One leading space should be put between the comment text and the comment symbol.
-4. If placed at the end of a line of code, all comments should be vertically aligned.
-```c
+4. If placed at the end of a line of code, all comments should be vertically aligned (within the context of a file).
+```
+the first line of code;  // comment text
+
 /* comment text
  * comment text
  * comment text
  */
 
- // comment text
+ line of code;          // comment text
+ another line of code;  // comment text
 ```
 
-
-5. All comments should be written in coherent, complete sentences.
-6. Assume a competentcy with the language from a reader, and avoid explaining the obvious. (*You aren't trying to hit a comment count for an assignment, you're trying to actually be helpful to yourself and others in the future*)
-7. Single line comments should be used where the function of a single line may be ambiguous.
-
-*TODO: Consider whether it's necessary to require conformance to automatic documentation generation standards*
+5. Assume the reader is competent in the language, and avoid explaining the obvious. (*You aren't trying to hit a comment count for an assignment, you're trying to actually be helpful to yourself and others in the future*)
+6. Single line comments should be used where the function of a single line may be ambiguous.
 
 #### Comment Locations
-1. Functions should be preceeded by a short comment block explaining the relevant values (inputs, outputs) and an extremely brief description of the purpose of the function.
-```c title="Example"
-/* [sum]
- * Returns the sum of two numbers
- *
- * Input: int A, int B
- * Output: int C
- */
+1. Functions should be preceeded by a short comment block explaining the relevant values (inputs, outputs) and an extremely brief description of the purpose of the function. This comment block should follow Doxygen styling, [linked here](https://www.doxygen.nl/manual/docblocks.html). 
 
+```c title="Example"
+/**
+ * Sums two numbers
+ * @param A an integer
+ * @param B an integer
+ * @return The summation
+ */
 int sum(int A, int B) {
     int c;
     c = a + b;
@@ -108,6 +108,7 @@ int sum(int A, int B) {
 
 #### Pointer (* and &) Operators
 1. Pointer operators should be written without a space on the operand side (i.e. ```type *name```).
+2. Pointer variables should be declared on a line separate from non-pointer variables of the same type, to avoid confusion between the two.
 
 #### Alignment Rules
 1. TODO: Consider whether to always left align the # of a preprocessor directive, regardless of the indentation of the line
@@ -122,7 +123,8 @@ int sum(int A, int B) {
 1. File names should consist only of lower case letters, numbers, and underscores.
 2. File names are recommended to be no longer than 16 characters. Ideally file names are specific and short, like the file itself.
 3. All module names should not overlap with those of the standard library.
-TODO: content
+
+TODO: more content
 
 ### Data Type Rules
 TODO: content
