@@ -129,15 +129,22 @@ int sum(int A, int B) {
 3. Header files should concern themselves strictly with the information that is needed to be known by other modules. (Everything else should be declared within the source file itself)
 
 #### Source Files
-1. Source files should be specific, and contain only the information relevant to controlling one 'domain' (UART driver, Servo control, etc)
-2. Source files should always ```#include``` the corresponding header file
+1. Source files should be specific, and contain only the information relevant to controlling one 'domain' (UART driver, Servo control, etc).
+2. Source files should always ```#include``` the corresponding header file.
 3. No absolute paths should be used in ```#include``` statements
-4. Do not include extraneous ```#include``` statements
-5. Do not directly ```#include``` another source file; always ```#include``` the relevant header file
+4. Do not include extraneous ```#include``` statements.
+5. Do not directly ```#include``` another source file; always ```#include``` the relevant header file.
 6. Any variables shared internally across the entire module but that aren't declared according to the rules of the header file should be declared at the top of the module's source file.
 
 ### Data Type Rules
-TODO: content
+#### Type Definitions
+1. When defining new data types, they should always be appended with the ```_t``` designation
+2. Data types should be defined only through ```typedef``` declarations
+3. Any data types that are ```public``` should have their module name prepended to them in the pattern ```module_type```...
+
+#### Use of Types
+1. Any time a specific number of bits needs to be used, one of the fixed-width integer types defined in ```stdint.h``` should be used, rather than one of the named types (short, long, long long).
+2. ```char``` types should be used **only** when related to strings; See rule 1 in this subsection.
 
 ### Procedure Rules
 TODO: content
