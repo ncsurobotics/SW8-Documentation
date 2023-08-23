@@ -123,8 +123,20 @@ int sum(int A, int B) {
 1. File names should consist only of lower case letters, numbers, and underscores.
 2. File names are recommended to be no longer than 16 characters. Ideally file names are specific and short, like the file itself.
 3. All module names should not overlap with those of the standard library.
+4. All files that contain a ```main()``` function should include "main" within the filename.
 
-TODO: more content
+#### Header Files
+1. Include preprocessor guards against multiple inclusion within all header files (#ifndef NAME_H)
+2. No variables should be declared within a header file, nor should any storage be allocated
+3. Header files should concern themselves strictly with the information that is needed to be known by other modules. (Everything else should be declared within the source file itself)
+
+#### Source Files
+1. Source files should be specific, and contain only the information relevant to controlling one 'domain' (UART driver, Servo control, etc)
+2. Source files should always ```#include``` the corresponding header file
+3. No absolute paths should be used in ```#include``` statements
+4. Do not include extraneous ```#include``` statements
+5. Do not directly ```#include``` another source file; always ```#include``` the relevant header file
+6. Any variables shared internally across the entire module but that aren't declared according to the rules of the header file should be declared at the top of the module's source file.
 
 ### Data Type Rules
 TODO: content
