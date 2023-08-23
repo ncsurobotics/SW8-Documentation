@@ -1,15 +1,13 @@
 
-*Note that this page is currently in the process of being written*
+*Note, this page is currently in the process of being written*
 
 ## Overview
 This guide follows the general outline and some of the recommendations of [*Barr Group's Embedded C Coding Standard*](https://barrgroup.com/embedded-systems/books/embedded-c-coding-standard), set forth by Michael Barr.
 
 Many of these rules are common sense and you probably are already following them in your own coding style. However, for consistency across the team it is practical to write them explicitly.
 
-??? info "Revision History"
-    - *Revision 0.1 by William K, 11 Jun 2023*
-    - *Revision 0.2 by William K, 12 Aug 2023*
-    - *Revision 0.2.1 by William K, 17 Aug 2023*
+??? info Last updated: 2023-08-23
+
 
 ---
 
