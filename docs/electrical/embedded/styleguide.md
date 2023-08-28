@@ -2,14 +2,42 @@
 
 *Note, this page is currently in the process of being written*
 
+## Table of Contents
+- [Embedded Programming Style Guide](#embedded-programming-style-guide)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Rules](#rules)
+    - [General Rules](#general-rules)
+      - [Line Width](#line-width)
+      - [Braces](#braces)
+      - [Parentheses](#parentheses)
+      - [Common Abbreviations](#common-abbreviations)
+      - [Casts](#casts)
+      - [Keywords](#keywords)
+    - [Comment Rules](#comment-rules)
+      - [Comment Locations](#comment-locations)
+    - [White Space Rules](#white-space-rules)
+      - [Pointer (\* and \&) Operators](#pointer--and--operators)
+      - [Alignment Rules](#alignment-rules)
+      - [Tab Rules](#tab-rules)
+    - [Module Rules](#module-rules)
+      - [Naming Conventions](#naming-conventions)
+      - [Header Files](#header-files)
+      - [Source Files](#source-files)
+    - [Data Type Rules](#data-type-rules)
+      - [Type Definitions](#type-definitions)
+      - [Use of Types](#use-of-types)
+    - [Procedure Rules](#procedure-rules)
+    - [Variable Rules](#variable-rules)
+    - [Statement Rules](#statement-rules)
+
 ## Overview
 
 This guide follows the general outline and some of the recommendations of [*Barr Group's Embedded C Coding Standard*](https://barrgroup.com/embedded-systems/books/embedded-c-coding-standard), set forth by Michael Barr.
 
 Many of these rules are common sense and you probably are already following them in your own coding style. However, for consistency across the team it is practical to write them explicitly.
 
-??? info Last updated: 2023-08-23
-
+??? info Last updated: 2023-08-28 3:41 PM
 
 ---
 
@@ -50,9 +78,9 @@ Many of these rules are common sense and you probably are already following them
 soft_arm && hard_arm
 ```
 
-#### Common Abreviations
+#### Common Abbreviations
 
-1. Unless it is an abbreviation in common use and understood widely among programmers, refrain from using abreviations as they can obfuscate the meaning of code.
+1. Unless it is an abbreviation in common use and understood widely among programmers, refrain from using abbreviations as they can obfuscate the meaning of code.
 2. Common variable names, such as ```i``` for a loop counter can be used under the condition that it is of limited scope and purpose, and that the context it is in is exceedingly clear.
 
 #### Casts
@@ -125,8 +153,8 @@ int sum(int A, int B) {
 
 #### Alignment Rules
 
-1. TODO: Consider whether to always left align the # of a preprocessor directive, regardless of the indentation of the line
-2. Align relevant blocks of code together (Don't be stupid) 
+1. The # of a preprocessor directive should always be left aligned, regardless of the indentation of the line.
+2. Align relevant blocks of code together (Don't be stupid)
     TODO: Make this nicer?
 
 #### Tab Rules
@@ -145,14 +173,15 @@ int sum(int A, int B) {
 #### Header Files
 
 1. Include preprocessor guards against multiple inclusion within all header files (#ifndef NAME_H)
-2. No variables should be declared within a header file, nor should any storage be allocated
-3. Header files should concern themselves strictly with the information that is needed to be known by other modules. (Everything else should be declared within the source file itself)
+2. ```#pragma once``` should not be used for protection against multiple files, see previous rule for alternative.
+3. No variables should be declared within a header file, nor should any storage be allocated
+4. Header files should concern themselves strictly with the information that is needed to be known by other modules. (Everything else should be declared within the source file itself)
 
 #### Source Files
 
 1. Source files should be specific, and contain only the information relevant to controlling one 'domain' (UART driver, Servo control, etc).
 2. Source files should always ```#include``` the corresponding header file.
-3. No absolute paths should be used in ```#include``` statements
+3. No absolute or relative paths should be used in ```#include``` statements
 4. Do not include extraneous ```#include``` statements.
 5. Do not directly ```#include``` another source file; always ```#include``` the relevant header file.
 6. Any variables shared internally across the entire module but that aren't declared according to the rules of the header file should be declared at the top of the module's source file.
@@ -161,9 +190,11 @@ int sum(int A, int B) {
 
 #### Type Definitions
 
-1. When defining new data types, they should always be appended with the ```_t``` designation
-2. Data types should be defined only through ```typedef``` declarations
-3. Any data types that are ```public``` should have their module name prepended to them in the pattern ```module_type```...
+1. When defining new data types, they should always be appended with the ```_t``` designation.
+2. Data types should be defined only through ```typedef``` declarations.
+3. Any data types that are ```public``` should have their module name prepended to them in the pattern ```module_type```.
+4. Any data types that are ```public``` are to be declared in their module's respective *header* file.
+5. Any data types that are ```private``` are to be declared in their module's respective *source* file.
 
 #### Use of Types
 
