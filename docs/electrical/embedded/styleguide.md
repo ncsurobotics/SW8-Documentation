@@ -3,6 +3,7 @@
 *Note, this page is currently in the process of being written*
 
 ## Table of Contents
+
 - [Embedded Programming Style Guide](#embedded-programming-style-guide)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
@@ -48,7 +49,7 @@ Many of these rules are common sense and you probably are already following them
 #### Line Width
 
 1. No line width is enforced as we do not do paper code reviews. Please use your best descretion for when a line is considered too long (if you're not sure, try to keep the longest line to around 80 characters).
-2. The preprocessor directive (```#define```) shall not be used to alter or rename any keyword or other part of the C programming language.
+2. The preprocessor directive (```#define```) should not be used to alter or rename any keyword or other part of the C programming language.
 3. The minimum target standard for both C and C++ is **C/C++ 11**. However, if newer versions such as 14 or 17 are available for the toolchain in use, they are preferred.
 
 #### Braces
@@ -58,9 +59,7 @@ Many of these rules are common sense and you probably are already following them
     ``` c title="Example"
     if (condition) {
         code block;
-    }
-
-    else {
+    } else {
         code block line 2;
         code block line 1;
         code block line 3;
@@ -144,7 +143,7 @@ int sum(int A, int B) {
 5. Parentheses, braces, and brackets should not have an adjacent space on the interior side.
 6. Excluding the end of a line, separating commas should should be followed by one space.
 7. Semicolons should follow a preceeding statement without a space, but should always be followed by a space unless they end a line.
-8. Use whitespace to separate blocks of code from each other in a logical fashion. (William's note: to please my OCD use either 1 or 3 lines of separation depending on context, don't use two :) )
+8. Use whitespace to separate blocks of code from each other in a logical fashion. (William's note: to please my OCD use either 1 or 3 lines of separation depending on context, don't use two :-] )
 
 #### Pointer (* and &) Operators
 
@@ -154,7 +153,7 @@ int sum(int A, int B) {
 #### Alignment Rules
 
 1. The # of a preprocessor directive should always be left aligned, regardless of the indentation of the line.
-2. Align relevant blocks of code together (Don't be stupid)
+2. Align relevant blocks of code together (Don't be stupid).
     TODO: Make this nicer?
 
 #### Tab Rules
@@ -168,20 +167,21 @@ int sum(int A, int B) {
 1. File names should consist only of lower case letters, numbers, and underscores.
 2. File names are recommended to be no longer than 16 characters. Ideally file names are specific and short, like the file itself.
 3. All module names should not overlap with those of the standard library.
-4. All files that contain a ```main()``` function should include "main" within the filename.
+4. All files that contain a ```main()``` function should include "main" within the filename. In general, there will be only one file containing a main function. In this case, the file hsould be named ```main.c``` or ```main.cpp```.
 
 #### Header Files
 
 1. Include preprocessor guards against multiple inclusion within all header files (#ifndef NAME_H)
 2. ```#pragma once``` should not be used for protection against multiple files, see previous rule for alternative.
-3. No variables should be declared within a header file, nor should any storage be allocated
+3. No variables should be defined within a header file, nor should any storage be allocated.
 4. Header files should concern themselves strictly with the information that is needed to be known by other modules. (Everything else should be declared within the source file itself)
+5. Unless required for a specific purpose, headers and source files should always be paired. Multiple source files per header file is discouraged.
 
 #### Source Files
 
 1. Source files should be specific, and contain only the information relevant to controlling one 'domain' (UART driver, Servo control, etc).
 2. Source files should always ```#include``` the corresponding header file.
-3. No absolute or relative paths should be used in ```#include``` statements
+3. No absolute or relative paths should be used in ```#include``` statements. Instead, the build system should be used to include relevant links.
 4. Do not include extraneous ```#include``` statements.
 5. Do not directly ```#include``` another source file; always ```#include``` the relevant header file.
 6. Any variables shared internally across the entire module but that aren't declared according to the rules of the header file should be declared at the top of the module's source file.
@@ -191,7 +191,7 @@ int sum(int A, int B) {
 #### Type Definitions
 
 1. When defining new data types, they should always be appended with the ```_t``` designation.
-2. Data types should be defined only through ```typedef``` declarations.
+2. Structs and enums should be implemented only through ```typedef``` declarations.
 3. Any data types that are ```public``` should have their module name prepended to them in the pattern ```module_type```.
 4. Any data types that are ```public``` are to be declared in their module's respective *header* file.
 5. Any data types that are ```private``` are to be declared in their module's respective *source* file.
@@ -200,13 +200,14 @@ int sum(int A, int B) {
 
 1. Any time a specific number of bits needs to be used, one of the fixed-width integer types defined in ```stdint.h``` should be used, rather than one of the named types (short, long, long long).
 2. ```char``` types should be used **only** when related to strings; See rule 1 in this subsection.
-3. Bit fields--such as those used for register mapping--should be defined only within unsigned integer types.
-4. Bitwise operations should only be done on unsigned integer types.
-5. Signed and unsigned integers should preferably never be mixed within operations
-6. Avoid floating point operations wherever possible.
+3. ```bool``` types should be used from the C standard library (```stdbool.h```), rather than defined using enums or preprocessor directives.
+4. Bit fields--such as those used for register mapping--should be defined only within unsigned integer types.
+5. Bitwise operations should only be done on unsigned integer types.
+6. Signed and unsigned integers should preferably never be mixed within operations
+7. Avoid floating point operations wherever practical. 
+   (*There is some discretion required here. If it makes sense to do floating point, as you have an FPU, or it would violate common mathematical assumptions to do otherwise, proceed accordingly.*)
 
-TODO: Add content pertaining to structs and unions?
-TODO: Add content pertaining to bools?
+TODO: Add content pertaining to unions?
 
 ### Procedure Rules
 
