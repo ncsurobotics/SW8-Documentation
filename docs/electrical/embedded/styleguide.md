@@ -1,36 +1,35 @@
-# Embedded Programming Style Guide
+AquaPack Robotics Embedded Programming Style Guide
 
 *Note, this page is currently in the process of being written*
 
 ## Table of Contents
 
-- [Embedded Programming Style Guide](#embedded-programming-style-guide)
-  - [Table of Contents](#table-of-contents)
-  - [Overview](#overview)
-  - [Rules](#rules)
-    - [General Rules](#general-rules)
-      - [Line Width](#line-width)
-      - [Braces](#braces)
-      - [Parentheses](#parentheses)
-      - [Common Abbreviations](#common-abbreviations)
-      - [Casts](#casts)
-      - [Keywords](#keywords)
-    - [Comment Rules](#comment-rules)
-      - [Comment Locations](#comment-locations)
-    - [White Space Rules](#white-space-rules)
-      - [Pointer (\* and \&) Operators](#pointer--and--operators)
-      - [Alignment Rules](#alignment-rules)
-      - [Tab Rules](#tab-rules)
-    - [Module Rules](#module-rules)
-      - [Naming Conventions](#naming-conventions)
-      - [Header Files](#header-files)
-      - [Source Files](#source-files)
-    - [Data Type Rules](#data-type-rules)
-      - [Type Definitions](#type-definitions)
-      - [Use of Types](#use-of-types)
-    - [Procedure Rules](#procedure-rules)
-    - [Variable Rules](#variable-rules)
-    - [Statement Rules](#statement-rules)
+- [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+- [Rules](#rules)
+  - [General Rules](#general-rules)
+    - [Line Width](#line-width)
+    - [Braces](#braces)
+    - [Parentheses](#parentheses)
+    - [Common Abbreviations](#common-abbreviations)
+    - [Casts](#casts)
+    - [Keywords](#keywords)
+  - [Comment Rules](#comment-rules)
+    - [Comment Locations](#comment-locations)
+  - [White Space Rules](#white-space-rules)
+    - [Pointer (\* and \&) Operators](#pointer--and--operators)
+    - [Alignment Rules](#alignment-rules)
+    - [Tab Rules](#tab-rules)
+  - [Module Rules](#module-rules)
+    - [Naming Conventions](#naming-conventions)
+    - [Header Files](#header-files)
+    - [Source Files](#source-files)
+  - [Data Type Rules](#data-type-rules)
+    - [Type Definitions](#type-definitions)
+    - [Use of Types](#use-of-types)
+  - [Procedure Rules](#procedure-rules)
+  - [Variable Rules](#variable-rules)
+  - [Statement Rules](#statement-rules)
 
 ## Overview
 
@@ -38,7 +37,7 @@ This guide follows the general outline and some of the recommendations of [*Barr
 
 Many of these rules are common sense and you probably are already following them in your own coding style. However, for consistency across the team it is practical to write them explicitly.
 
-??? info Last updated: 2023-08-28 3:41 PM
+??? info Last updated: 2023-09-06 12:16 PM
 
 ---
 
@@ -207,7 +206,7 @@ int sum(int A, int B) {
 7. Avoid floating point operations wherever practical. 
    (*There is some discretion required here. If it makes sense to do floating point, as you have an FPU, or it would violate common mathematical assumptions to do otherwise, proceed accordingly.*)
 
-TODO: Add content pertaining to unions?
+TODO: Add content pertaining to unions
 
 ### Procedure Rules
 
