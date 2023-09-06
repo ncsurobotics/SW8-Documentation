@@ -204,7 +204,7 @@ int sum(int A, int B) {
 5. Bitwise operations should only be done on unsigned integer types.
 6. Signed and unsigned integers should preferably never be mixed within operations
 7. Avoid floating point operations wherever practical. 
-   (*There is some discretion required here. If it makes sense to do floating point, as you have an FPU, or it would violate common mathematical assumptions to do otherwise, proceed accordingly.*)
+   (*There is some discretion required here. If it makes sense to do floating point (you have an FPU, it would violate common mathematical assumptions to do otherwise, etc.) proceed accordingly.*)
 
 TODO: Add content pertaining to unions
 
