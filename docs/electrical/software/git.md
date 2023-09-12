@@ -80,6 +80,21 @@ See 'git help git' for an overview of the system.
     - Arch: `sudo pacman -S git`
 
 
+## GitHub Authentication
+
+GitHub disallow less secure "basic password" authentication. Thus to clone private repositories or push to repositories you have write access to, you must be able to authenticate with a more secure method. There are three ways of doing this
+
+- Use Git Credential Manager (recommended as this is the easiest to setup)
+- Use a personal access token (strongly discouraged for general use)
+- Use a SSH key registered to your GitHub account
+
+### Git Credential Manager
+
+Generally we are using git on local computers with a graphical login. Thus, Git Credential Manager can be used. It should be installed by default with the git installer for windows. Other platforms, follow the instructions [here](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md).
+
+Once installed and configured, you can clone and interact with git repositories using "https" protocol. When you need to login to your github account to access a repository, a small window will popup allowing you to login. Git credential manager will remember the login on that computer in the future.
+
+
 ## Using Git
 
 *Note: There are many graphical tools out there for git (GitHub desktop, SourceTree, etc), however this guide focuses on using git from the command line.*
