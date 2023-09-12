@@ -1,5 +1,5 @@
 
-*Note that this page is currently an outline and most of the content is not yet written.*
+*Note that this page is currently incomplete.*
 
 This user guide is intended to be a reference, not a tutorial. There are many good KiCad tutorials available online, however please note that there are sometimes multiple ways to do things in KiCad (eg library management). *In such cases, please use the methods described on this page.* Part of this page's purpose is to describe our conventions / approaches to using KiCad.
 
@@ -51,17 +51,18 @@ This library must be installed once per system you install KiCad on.
 
 ### Installation
 
-1. Clone [this](https://github.com/ncsurobotics/SW-KicadLibrary/) repository somewhere on your system. The location does not matter. *On windows, avoid putting it in OneDrive (ie don't put it in your documents folder)*.
-2. Open KiCad. Close any open project (File > Close Project)
-3. Preferences > Manage Symbol Libraries
-4. The first time you open this menu, you will be asked to "Configure Global Symbol Library Table". Choose "Copy Default Global Symbol Table"
-5. On the Global Libraries tab select the folder icon at the bottom (Add existing library to table)
-6. Navigate to wherever you cloned the repo. Choose the `SWLib.kicad_sym` file.
-7. Click OK to close the symbol library table.
-8. Preferences > Manage Footprint Libraries
-9. The first time you open this menu, you will be asked to "Configure Global Footprint Library Table". Choose "Copy Default Global Footprint Table"
-10. On the Global Libraries tab select the folder icon at the bottom (Add existing library to table)
-11. Navigate to wherever you cloned the repo. Choose the `SWLib.pretty` folder.
+1. Install git ([instructions](./git.md))
+2. Use git to clone [this](https://github.com/ncsurobotics/SW-KicadLibrary/) repository somewhere on your system. The location does not matter. *On windows, avoid putting it in OneDrive (ie don't put it in your documents folder)*.
+3. Open KiCad. Close any open project (File > Close Project)
+4. Preferences > Manage Symbol Libraries
+5. The first time you open this menu, you will be asked to "Configure Global Symbol Library Table". Choose "Copy Default Global Symbol Table"
+6. On the Global Libraries tab select the folder icon at the bottom (Add existing library to table)
+7. Navigate to wherever you cloned the repo. Choose the `SWLib.kicad_sym` file.
+8. Click OK to close the symbol library table.
+9. Preferences > Manage Footprint Libraries
+10. The first time you open this menu, you will be asked to "Configure Global Footprint Library Table". Choose "Copy Default Global Footprint Table"
+11. On the Global Libraries tab select the folder icon at the bottom (Add existing library to table)
+12. Navigate to wherever you cloned the repo. Choose the `SWLib.pretty` folder.
 
 
 ### Updating
