@@ -24,11 +24,16 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tilde
 extra:
   generator: false
 copyright: AquaPack Robotics &copy; 2023 Released under <a id="footer-link" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 nav:
   - Home: index.md
+  - Procedures:
+    - Sealing: procedures/sealing.md
+    - Dry Run: procedures/dryrun.md
+    - Pool Test Communication: procedures/pooltestcomm.md
   - Electrical: 
     - Standards: electrical/standards.md
     - Software Tools: 
