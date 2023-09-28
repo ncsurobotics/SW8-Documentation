@@ -171,4 +171,33 @@ TODO: This will be written once there is a stable test interface for acoustics. 
 
 ## Camera Stream Test
 
-TODO: This will be written once a new test script exists
+*Note: this assumes the `starstreams.sh` script (https://github.com/ncsurobotics/SW8S-Camtest) are located at `~/camtest` on the jetson.*
+
+Note: On current images, rtsp-simple-server is not started automatically. Thus for now you first need to run the following
+
+```sh
+cd ~/rtsp-simple-server
+nohup ./rtsp-simple-server
+```
+
+Then, run
+
+
+```sh
+cd ~/camtest/
+./startstreams.sh
+```
+
+Next, you need to use [VLC](https://www.videolan.org/vlc/) on your computer to view the streams and make sure they are working. Note that the streams will be "delayed" when viewing with VLC, but this is OK. To view with less latency, you can install mpv and use the playstreams scripts in the camtest repo (if you don't know what this means, just test with VLC).
+
+To view with VLC
+
+- Leave the ssh session open
+- Launch VLC
+- Media > Open Network Stream
+- Enter `rtsp://192.168.2.5:8554/cam0`
+- Click "Play"
+- Wait until you see the stream
+- Close VLC
+- Repeat to play `rtsp://192.168.2.5:8554/cam1`
+- Wait until you see the stream
