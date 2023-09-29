@@ -1381,9 +1381,9 @@
     <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>sw8@192.168.2.5
 </code></pre></div></li>
 <li>Enter the password when prompted (ask other members if you don't know the password; I can't put it in public docs!)</li>
-<li>Once you've enterd the password, you'll have a ssh session connected to the jetson. You'll see a shell from the jetson in your terminal now.
-    TODO: Picture</li>
+<li>Once you've enterd the password, you'll have a ssh session connected to the jetson. You'll see a shell from the jetson in your terminal now.</li>
 </ul>
+<p><img alt="" src="../img/sw8_login_ssh.jpg" /></p>
 <h2 id="verify-everything-connected-to-jetson">Verify everything Connected to Jetson</h2>
 <p><em>Run the following commands in your ssh session.</em></p>
 <p>First make sure all necessary UART devices are present</p>
@@ -1394,16 +1394,14 @@
     - Two "TI MSP430" devices (MEB, it's actually just one device but shows up as two)
     - Two "Digilent" devices (Acoustics FPGA, it's actually just one device, but shows up as two)</p>
 <p>Example output:</p>
-<div class="highlight"><pre><span></span><code>TODO: Output
-</code></pre></div>
+<p><img alt="" src="../img/lsserial.jpg" /></p>
 <p><br /></p>
 <p>Then, make make sure cameras are connected</p>
 <div class="highlight"><pre><span></span><code>v4l2-ctl<span class="w"> </span>--list-devices
 </code></pre></div>
 <p>You should see two ArduCam devices (two different sections as shown below!)</p>
 <p>Example output</p>
-<div class="highlight"><pre><span></span><code>TODO
-</code></pre></div>
+<p><img alt="" src="../img/v4l2output.jpg" /></p>
 <h2 id="test-arm-kill">Test Arm &amp; Kill</h2>
 <ul>
 <li>Arm the robot using the hardware arm switch. Thrusters should not beep yet (if they do, software kill is either broken or disabled).</li>
@@ -1413,12 +1411,12 @@
 <li>Arm the robot using the hardware switch. Thrusters should now beep.</li>
 </ul>
 <h2 id="motor-test">Motor Test</h2>
-<p><em>Note: This assumes AUVControlBoard interface scripts are located at <code>~/iface</code> on the jetson</em></p>
+<p><em>Note: This assumes AUVControlBoard interface scripts are located at <code>~/AUVControlBoard_VERSION</code> on the jetson (replace "VERSION" with whatever version is on the jetson; run <code>ls ~</code> to list what is on the jetson)</em></p>
 <p>Run the following commands. The last command is a script that will prompt for dry run settings (speed and duration). Just press enter twice for default settings. Then, type each thruster number followed by enter and make sure that thruster moves. After testing all thrusters, type "q" and press enter to exit.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/iface
 ./launch.py<span class="w"> </span>example/motor_test.py
 </code></pre></div>
-<p>Note: if you get errors about communication with the control board, you may need to specify a port (launch.py defaults to <code>/dev/ttyACM0</code>). To check the port run <code>realpath /dev/serial/by-id/</code>  TODO: Finish command</p>
+<p>Note: if you get errors about communication with the control board, you may need to specify a port (launch.py defaults to <code>/dev/ttyACM0</code>). To check the port run <code>realpath /dev/serial/by-id/*Control_Board*</code></p>
 <p>If any of the following occur, fix them!</p>
 <ul>
 <li>Wrong thruster numbers moving</li>
@@ -1437,8 +1435,7 @@
 <h2 id="meb-communication-voltage-monitor">MEB Communication &amp; Voltage Monitor</h2>
 <p><em>Note: this assumes the MEB scripts (https://github.com/ncsurobotics/SW8E-MEB-Software scripts folder) are located at <code>~/meb-scripts</code> on the jetson.</em></p>
 <p>Run the following command to determine what UART port MEB is</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># TODO: FINISH THIS COMMAND</span>
-realpath<span class="w"> </span>/dev/serial/by-id/
+<div class="highlight"><pre><span></span><code>realpath<span class="w"> </span>/dev/serial/by-id/Texas_Instruments_MSP_Tools_Driver_*-if02
 </code></pre></div>
 <p>Run the following command. Replace <code>PORT</code> with the port from the command above.</p>
 <div class="highlight"><pre><span></span><code>cd ~/meb-scripts/
