@@ -17,8 +17,8 @@
     ```
 - Enter the password when prompted (ask other members if you don't know the password; I can't put it in public docs!)
 - Once you've enterd the password, you'll have a ssh session connected to the jetson. You'll see a shell from the jetson in your terminal now.
-    TODO: Picture
 
+![](./img/sw8_login_ssh.jpg)
 
 ## Verify everything Connected to Jetson
 
@@ -37,9 +37,7 @@ You should see several devices. Make sure the following exist
 
 Example output:
 
-```
-TODO: Output
-```
+![](./img/lsserial.jpg)
 
 <br />
 
@@ -53,9 +51,7 @@ You should see two ArduCam devices (two different sections as shown below!)
 
 Example output
 
-```
-TODO
-```
+![](./img/v4l2output.jpg)
 
 
 ## Test Arm & Kill
@@ -68,7 +64,7 @@ TODO
 
 ## Motor Test
 
-*Note: This assumes AUVControlBoard interface scripts are located at `~/iface` on the jetson*
+*Note: This assumes AUVControlBoard interface scripts are located at `~/AUVControlBoard_VERSION` on the jetson (replace "VERSION" with whatever version is on the jetson; run `ls ~` to list what is on the jetson)*
 
 Run the following commands. The last command is a script that will prompt for dry run settings (speed and duration). Just press enter twice for default settings. Then, type each thruster number followed by enter and make sure that thruster moves. After testing all thrusters, type "q" and press enter to exit.
 
@@ -77,7 +73,7 @@ cd ~/iface
 ./launch.py example/motor_test.py
 ```
 
-Note: if you get errors about communication with the control board, you may need to specify a port (launch.py defaults to `/dev/ttyACM0`). To check the port run `realpath /dev/serial/by-id/`  TODO: Finish command
+Note: if you get errors about communication with the control board, you may need to specify a port (launch.py defaults to `/dev/ttyACM0`). To check the port run `realpath /dev/serial/by-id/*Control_Board*`
 
 If any of the following occur, fix them!
 
@@ -103,8 +99,7 @@ The motor test should work off either battery on its own. If it is not, the LBB 
 Run the following command to determine what UART port MEB is
 
 ```sh
-# TODO: FINISH THIS COMMAND
-realpath /dev/serial/by-id/
+realpath /dev/serial/by-id/Texas_Instruments_MSP_Tools_Driver_*-if02
 ```
 
 Run the following command. Replace `PORT` with the port from the command above.
