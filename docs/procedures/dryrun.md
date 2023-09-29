@@ -172,7 +172,7 @@ Note: On current images, rtsp-simple-server is not started automatically. Thus f
 
 ```sh
 cd ~/rtsp-simple-server
-nohup ./rtsp-simple-server
+nohup ./rtsp-simple-server &
 ```
 
 Then, run
@@ -196,3 +196,10 @@ To view with VLC
 - Close VLC
 - Repeat to play `rtsp://192.168.2.5:8554/cam1`
 - Wait until you see the stream
+
+
+When done, run the following on the jetson
+
+```sh
+killall rtsp-simple-server
+```
