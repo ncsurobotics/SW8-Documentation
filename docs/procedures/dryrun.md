@@ -79,7 +79,9 @@ cd iface
 ./launch.py example/motor_test.py
 ```
 
-Note: if you get errors about communication with the control board, you may need to specify a port (launch.py defaults to `/dev/ttyACM0`). To check the port run `realpath /dev/serial/by-id/*Control_Board*`
+Note 1: If you get error 255 from the control board scripts, this indicates a timeout occurred. This is likely not a communication error with the control board. Just re-run the script and try again. It should work.
+
+Note 2: If you get errors about communication with the control board (unable to open port, errors other than 255), you may need to specify a port (launch.py defaults to `/dev/ttyACM0`). To check the port run `realpath /dev/serial/by-id/*Control_Board*`.
 
 If any of the following occur, fix them!
 
