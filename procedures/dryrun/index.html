@@ -1479,7 +1479,7 @@ python3<span class="w"> </span>msb_command.py<span class="w"> </span>PORT<span c
 <p><em>Note: this assumes the <code>starstreams.sh</code> script (https://github.com/ncsurobotics/SW8S-Camtest) are located at <code>~/camtest</code> on the jetson.</em></p>
 <p>Note: On current images, rtsp-simple-server is not started automatically. Thus for now you first need to run the following</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/rtsp-simple-server
-nohup<span class="w"> </span>./rtsp-simple-server
+nohup<span class="w"> </span>./rtsp-simple-server<span class="w"> </span><span class="p">&amp;</span>
 </code></pre></div>
 <p>Then, run</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/camtest/
@@ -1498,6 +1498,9 @@ nohup<span class="w"> </span>./rtsp-simple-server
 <li>Repeat to play <code>rtsp://192.168.2.5:8554/cam1</code></li>
 <li>Wait until you see the stream</li>
 </ul>
+<p>When done, run the following on the jetson</p>
+<div class="highlight"><pre><span></span><code>killall<span class="w"> </span>rtsp-simple-server
+</code></pre></div>
 
 
 
