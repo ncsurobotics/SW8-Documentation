@@ -1434,7 +1434,8 @@
 <span class="nb">cd</span><span class="w"> </span>iface
 ./launch.py<span class="w"> </span>example/motor_test.py
 </code></pre></div>
-<p>Note: if you get errors about communication with the control board, you may need to specify a port (launch.py defaults to <code>/dev/ttyACM0</code>). To check the port run <code>realpath /dev/serial/by-id/*Control_Board*</code></p>
+<p>Note 1: If you get error 255 from the control board scripts, this indicates a timeout occurred. This is likely not a communication error with the control board. Just re-run the script and try again. It should work.</p>
+<p>Note 2: If you get errors about communication with the control board (unable to open port, errors other than 255), you may need to specify a port (launch.py defaults to <code>/dev/ttyACM0</code>). To check the port run <code>realpath /dev/serial/by-id/*Control_Board*</code>.</p>
 <p>If any of the following occur, fix them!</p>
 <ul>
 <li>Wrong thruster numbers moving</li>
