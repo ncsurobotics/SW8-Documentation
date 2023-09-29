@@ -209,3 +209,14 @@ When done, run the following on the jetson
 ```sh
 killall rtsp-simple-server
 ```
+
+
+## Power off Safely
+
+Run
+
+```sh
+sudo poweroff
+```
+
+Then wait 30 seconds before turning the system off with the system switch.
