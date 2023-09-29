@@ -15,8 +15,9 @@
     ```sh
     ssh sw8@192.168.2.5
     ```
+- If prompted about a "fingerprint" enter "yes"
 - Enter the password when prompted (ask other members if you don't know the password; I can't put it in public docs!)
-- Once you've enterd the password, you'll have a ssh session connected to the jetson. You'll see a shell from the jetson in your terminal now.
+- Once you've entered the password, you'll have a ssh session connected to the jetson. You'll see a shell from the jetson in your terminal now.
 
 ![](./img/sw8_login_ssh.jpg)
 
@@ -38,6 +39,8 @@ You should see several devices. Make sure the following exist
 Example output:
 
 ![](./img/lsserial.jpg)
+
+*Note: the output sill vary slightly (these names include serial numbers). Also, the control board may be either Adafruit or STMicroElectronics.*
 
 <br />
 
@@ -66,10 +69,13 @@ Example output
 
 *Note: This assumes AUVControlBoard interface scripts are located at `~/AUVControlBoard_VERSION` on the jetson (replace "VERSION" with whatever version is on the jetson; run `ls ~` to list what is on the jetson)*
 
+Follow the above instructions to determine where the control board scripts are (determine the version).
+
 Run the following commands. The last command is a script that will prompt for dry run settings (speed and duration). Just press enter twice for default settings. Then, type each thruster number followed by enter and make sure that thruster moves. After testing all thrusters, type "q" and press enter to exit.
 
 ```sh
-cd ~/iface
+cd ~/AUVControlBoard_VERSION/   # Change VERSION!!!
+cd iface
 ./launch.py example/motor_test.py
 ```
 
