@@ -1504,6 +1504,7 @@ nohup<span class="w"> </span>./rtsp-simple-server<span class="w"> </span><span c
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/camtest/
 ./startstreams.sh
 </code></pre></div>
+<p><em>Note: this script will not exit on its own unless it fails. If it exits on its own, the cameras are probably not connected!</em></p>
 <p>Next, you need to use <a href="https://www.videolan.org/vlc/">VLC</a> on your computer to view the streams and make sure they are working. Note that the streams will be "delayed" when viewing with VLC, but this is OK. To view with less latency, you can install mpv and use the playstreams scripts in the camtest repo (if you don't know what this means, just test with VLC).</p>
 <p>To view with VLC</p>
 <ul>
@@ -1517,7 +1518,7 @@ nohup<span class="w"> </span>./rtsp-simple-server<span class="w"> </span><span c
 <li>Repeat to play <code>rtsp://192.168.2.5:8554/cam1</code></li>
 <li>Wait until you see the stream</li>
 </ul>
-<p>When done, run the following on the jetson</p>
+<p>When done, run the following on the jetson. Before running, press CTRL+C to kill the startstrams script so you get a shell prompt again.</p>
 <div class="highlight"><pre><span></span><code>killall<span class="w"> </span>rtsp-simple-server
 </code></pre></div>
 <h2 id="power-off-safely">Power off Safely</h2>
