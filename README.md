@@ -40,7 +40,7 @@ mkdocs gh-deploy
 - Top level img folder is for site images, not images used in docs
 - Each subteam should have an `img` and `diagram` folder for images and diagrams (drawio / diagrams.net).
 - Using `jpg` / `jpeg` images is HIGHLY recommended over `png` images. If using `png` images, consider using `pngquant` to compress them first.
-- Diagrams should be generated using drawio / diagrams.net (use desktop app). Store the source files in `diagram` folders (in each subteam's folder). When exporting a jpg / png, place it in the `img` folder. Use the same name as the diagram source. For larger diagrams, it is probably best to render at 200% zoom.
+- Diagrams should be generated using drawio / diagrams.net (use desktop app), or using the D2 language. Store the source files in `diagram` folders (in each subteam's folder). When exporting a jpg / png, place it in the `img` folder. Use the same name as the diagram source. For larger diagrams, it is probably best to render at 200% zoom. If D2 was used, the ELK engine is preferred for rendering to jpg / png, and the source (`.d2`) file should be stored in the `diagram` folder.
 - Images in markdown (these are custom features not standard markdown)
     - To choose image size, use attribute list `![](path/to/image){: style="width:80%;height:50%"}`. Either width, height, or both can be used.
     - To center an image, add the `center` class to the attribute list `{: .center}`
