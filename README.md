@@ -3,14 +3,20 @@
 Documentation for SeaWolf VIII
 
 
-## Required Tools
+## Setup
 
-Documentation is generated using [mkdocs](https://www.mkdocs.org/) using the [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) theme.
-
-- Install Python3 (executable may just be named `python` on windows)
-- Run the following command
+- Install Python3 with pip and venv modules
+- Windows
+    ```cmd
+    python3 -m venv .venv
+    .venv\scripts\activate
+    python -m pip install -r requiremenets.txt
+    ```
+- Linux / Unix (including macOS)
     ```sh
-    python3 -m pip install -U -r requirements.txt
+    python3 -m venv .venv
+    source .venv/bin/activate
+    python3 -m pip install -r requirements.txt
     ```
 
 ## Preview Documentation
