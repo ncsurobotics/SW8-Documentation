@@ -1,0 +1,125 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns2="http://www.inkscape.org/namespaces/inkscape" xmlns:ns3="http://www.w3.org/1999/xlink" width="449.99997mm" height="449.99994mm" viewBox="0 0 449.99997 449.99993" version="1.1" id="svg5" ns1:docname="t_diagram_g-fischer-4.svg" ns2:version="1.2.2 (732a01da63, 2022-12-09)" ns2:export-filename="t_diagram_g-fischer-11.svg" ns2:export-xdpi="96" ns2:export-ydpi="96">
+  <ns1:namedview id="namedview192" pagecolor="#808080" bordercolor="#000000" borderopacity="1" ns2:showpageshadow="true" ns2:pageopacity="0" ns2:pagecheckerboard="0" ns2:deskcolor="#505050" ns2:document-units="mm" showgrid="false" ns2:zoom="0.5" ns2:cx="681" ns2:cy="852" ns2:window-width="1440" ns2:window-height="837" ns2:window-x="1432" ns2:window-y="-8" ns2:window-maximized="1" ns2:current-layer="svg5" />
+  <ns0:style id="style16364">
+.measure-arrow
+{
+}
+.measure-label
+{
+
+}
+.measure-line
+{
+}</ns0:style>
+  <ns0:defs id="defs2">
+    <ns0:pattern ns3:href="#Strips1_1" id="pattern7657" patternTransform="matrix(17.67767,3.0853353e-7,-3.0853354e-7,17.67767,265.16506,-742.46209)" />
+    <ns0:pattern patternUnits="userSpaceOnUse" width="2" height="1" patternTransform="translate(0,0) scale(10,10)" id="Strips1_1">
+      <ns0:rect style="fill:black;stroke:none" x="0" y="-0.5" width="1" height="2" id="rect4273" />
+    </ns0:pattern>
+    <ns0:linearGradient id="linearGradient13681">
+      <ns0:stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="stop13679" />
+    </ns0:linearGradient>
+    <ns0:clipPath clipPathUnits="userSpaceOnUse" id="clipPath7685">
+      <ns0:rect style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1" id="rect7687" width="300" height="300" x="2.5722047e-06" y="450" transform="rotate(-44.999999)" />
+    </ns0:clipPath>
+  </ns0:defs>
+  <ns0:g id="background" transform="translate(75.000002,-375)" style="display:inline" ns2:label="background" ns1:insensitive="true">
+    <ns0:rect style="fill:#f7f7f7;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:butt;stroke-dasharray:none" id="base_color" width="449.99997" height="449.99997" x="-75.000008" y="377.9104" transform="translate(5.4583333e-6,-2.910401)" ns2:label="base_color" />
+    <ns0:rect style="opacity:0.25;fill:url(#pattern7657);fill-opacity:1;stroke:none;stroke-width:3.53553;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1" id="rect5359" width="530.33008" height="530.33008" x="265.16504" y="53.03302" transform="rotate(44.999999)" clip-path="url(#clipPath7685)" ns2:label="stripes" />
+  </ns0:g>
+  <ns0:g id="figure_base" style="display:inline" transform="translate(75.000008,-377.91041)" ns2:label="figure_base" ns1:insensitive="true">
+    <ns0:circle style="display:inline;fill:#f7f7f7;fill-opacity:1;stroke:#111111;stroke-width:3;stroke-linecap:round" id="fig_ring" cx="150.00002" cy="602.9104" r="150" ns2:label="fig_ring" />
+    <ns0:circle style="fill:#EA3030;fill-opacity:1;stroke:#111111;stroke-width:3;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1" id="fig_dot" cx="150.00002" cy="467.98965" r="10.079185" ns2:label="fig_dot" />
+    <ns0:path id="fig_shield" style="display:inline;fill:none;fill-opacity:1;stroke:#111111;stroke-width:4;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1" d="m 139.94187,467.43453 c -70.328957,5.1477 -125.789317,63.833 -125.789207,135.47599 1.7e-4,75.0263 60.82123,135.8471 135.847507,135.847" ns2:label="fig_shield" />
+    <ns0:path id="fig_pin_out_ring" style="display:inline;fill:none;stroke:#111111;stroke-width:1;stroke-dasharray:3, 3;stroke-dashoffset:0" d="m 230.34509,602.91393 a 80.344907,80.344907 0 0 1 -80.3449,80.34492 80.344907,80.344907 0 0 1 -80.344895,-80.34492 80.344907,80.344907 0 0 1 80.344895,-80.34492 80.344907,80.344907 0 0 1 80.3449,80.34492 z" ns2:label="fig_pin_out_ring" />
+    <ns0:circle style="display:inline;fill:none;fill-opacity:1;stroke:#111111;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" id="pin_4_out_c" cx="206.80647" cy="546.10022" r="18.985937" />
+    <ns0:circle style="display:inline;fill:none;fill-opacity:1;stroke:#111111;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" id="pin_3_out_c" cx="206.80772" cy="659.72369" r="18.985937" />
+    <ns0:circle style="display:inline;fill:none;fill-opacity:1;stroke:#111111;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" id="pin_2_out_c" cx="93.18161" cy="659.7251" r="18.985937" />
+    <ns0:circle style="display:inline;fill:none;fill-opacity:1;stroke:#111111;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" id="pin_1_out_c" cx="93.182861" cy="546.09888" r="18.985937" />
+  </ns0:g>
+  <ns0:g id="pin_color" style="fill:#000000;fill-opacity:0.505" transform="matrix(1.25,0,0,1.25,-311.84982,-90.11897)" ns1:insensitive="true">
+    <ns0:g id="pin_1_color" style="display:inline;fill:#000000;fill-opacity:0.505" transform="matrix(1.5,0,0,1.5,-49.332272,-739.3142)">
+      <ns0:path id="pin_1_color_top" style="display:inline;fill:#F2A833;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" d="m 296.0689,623.48082 a 10.125834,10.125834 0 0 0 -14.32032,10e-6 10.125834,10.125834 0 0 0 3.6e-4,14.31995 z" />
+      <ns0:path id="pin_1_color_bot" style="display:inline;fill:#F2A833;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" d="m 296.0689,623.48082 a 10.125834,10.125834 0 0 1 0,14.32032 10.125834,10.125834 0 0 1 -14.31996,-3.6e-4 z" />
+    </ns0:g>
+    <ns0:g id="pin_2_color" style="display:inline;fill:#000000;fill-opacity:0.505" transform="matrix(1.5,0,0,1.5,-48.60922,-648.63373)">
+      <ns0:path id="pin_2_color_top" style="display:inline;fill:#111111;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" d="m 295.5862,623.62783 a 10.125834,10.125834 0 0 0 -14.32032,10e-6 10.125834,10.125834 0 0 0 3.6e-4,14.31995 z" />
+      <ns0:path id="pin_2_color_bot" style="display:inline;fill:#111111;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" d="m 295.5862,623.62783 a 10.125834,10.125834 0 0 1 0,14.32032 10.125834,10.125834 0 0 1 -14.31996,-3.6e-4 z" />
+    </ns0:g>
+    <ns0:g id="pin_3_color" style="display:inline;fill:#000000;fill-opacity:0.505" transform="matrix(1.5,0,0,1.5,42.291669,-648.63483)">
+      <ns0:path id="pin_3_color_top" style="display:inline;fill:#3388DE;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" d="m 295.5862,623.62783 a 10.125834,10.125834 0 0 0 -14.32032,10e-6 10.125834,10.125834 0 0 0 3.6e-4,14.31995 z" />
+      <ns0:path id="pin_3_color_bot" style="display:inline;fill:#3388DE;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" d="m 295.5862,623.62783 a 10.125834,10.125834 0 0 1 0,14.32032 10.125834,10.125834 0 0 1 -14.31996,-3.6e-4 z" />
+    </ns0:g>
+    <ns0:g id="pin_4_color" style="display:inline;fill:#000000;fill-opacity:0.505" transform="matrix(1.5,0,0,1.5,42.290671,-739.53362)">
+      <ns0:path id="pin_4_color_top" style="display:inline;fill:#EA3030;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" d="m 295.5862,623.62783 a 10.125834,10.125834 0 0 0 -14.32032,10e-6 10.125834,10.125834 0 0 0 3.6e-4,14.31995 z" />
+      <ns0:path id="pin_4_color_bot" style="display:inline;fill:#EA3030;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1" d="m 295.5862,623.62783 a 10.125834,10.125834 0 0 1 0,14.32032 10.125834,10.125834 0 0 1 -14.31996,-3.6e-4 z" />
+    </ns0:g>
+  </ns0:g>
+  <ns0:g id="pin_symbol" transform="translate(75.000008,-377.91041)" style="display:inline" ns2:label="pin_symbol" ns1:insensitive="true">
+    <ns0:g id="g12885" ns2:label="pin_1" transform="translate(-56.810669,-89.785919)">
+      <ns0:circle style="fill:none;fill-opacity:1;stroke:#111111;stroke-width:2.5;stroke-linecap:butt;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="pin_1_symbol" cx="149.99974" cy="635.88611" r="12.979577" ns2:label="pin_1_symbol" />
+      <ns0:text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.9333px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';text-align:center;text-anchor:middle;fill:#111111;fill-opacity:1;stroke-width:0.264583" x="170.64435" y="661.04425" id="pin_1_text" ns2:label="pin_1_text"><ns0:tspan id="tspan28165" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';text-align:center;text-anchor:middle;fill:#111111;fill-opacity:1;stroke-width:0.264583" x="170.64435" y="661.04425">1</ns0:tspan><ns0:tspan style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';text-align:center;text-anchor:middle;fill:#111111;fill-opacity:1;stroke-width:0.264583" x="170.64435" y="682.21088" id="tspan28167" /></ns0:text>
+    </ns0:g>
+    <ns0:g id="g12883" ns2:label="pin_2" transform="translate(-85.3647,73.300821)">
+      <ns0:circle style="display:inline;fill:none;fill-opacity:1;stroke:#111111;stroke-width:2.5;stroke-linecap:butt;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="pin_2_symbol" cx="178.55252" cy="586.4256" r="12.979577" ns2:label="pin_2_symbol" />
+      <ns0:text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.9333px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';text-align:end;text-anchor:end;fill:#111111;fill-opacity:1;stroke-width:0.264583" x="204.43629" y="570.42792" id="pin_2_text" ns2:label="pin_2_text"><ns0:tspan id="tspan28171" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';text-align:end;text-anchor:end;fill:#111111;fill-opacity:1;stroke-width:0.264583" x="204.43629" y="570.42792">2</ns0:tspan></ns0:text>
+    </ns0:g>
+    <ns0:g id="g12881" ns2:label="pin_3" transform="translate(85.366811,73.299697)">
+      <ns0:circle style="fill:none;fill-opacity:1;stroke:#111111;stroke-width:2.5;stroke-linecap:butt;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="pin_3_symbol" cx="121.44712" cy="586.42535" r="12.979577" ns2:label="pin_3_symbol" />
+      <ns0:text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.9333px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#111111;fill-opacity:1;stroke-width:0.264583" x="95.974991" y="570.30499" id="pin_3_text" ns2:label="pin_3_text"><ns0:tspan id="tspan28175" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#111111;fill-opacity:1;stroke-width:0.264583" x="95.974991" y="570.30499">3</ns0:tspan></ns0:text>
+    </ns0:g>
+    <ns0:g id="g12879" ns2:label="pin_4" transform="translate(140.60373,-105.18567)">
+      <ns0:circle style="display:inline;fill:none;fill-opacity:1;stroke:#111111;stroke-width:2.5;stroke-linecap:butt;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="pin_4_symbol" cx="66.208954" cy="651.28723" r="12.979577" ns2:label="pin_4_symbol" />
+      <ns0:text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.9333px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#111111;fill-opacity:1;stroke-width:0.264583" x="40.853828" y="676.30756" id="pin_4_text" ns2:label="pin_4_text"><ns0:tspan id="tspan28179" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#111111;fill-opacity:1;stroke-width:0.264583" x="40.853828" y="676.30756">4</ns0:tspan></ns0:text>
+    </ns0:g>
+  </ns0:g>
+  <ns0:g id="figure_info" ns1:insensitive="true" style="display:inline">
+    <ns0:text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New';display:inline;fill:#111111;fill-opacity:1;stroke-width:0.264583" x="157.60519" y="406.99561" id="gen_timestamp" ns2:label="gen_timestamp"><ns0:tspan id="gen_timestamp_tspan" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:end;text-anchor:end;fill:#111111;fill-opacity:1;stroke-width:0.264583" x="157.60519" y="406.99561">Gen 2024.04.15</ns0:tspan></ns0:text>
+    <ns0:text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;display:inline;fill:#111111;fill-opacity:1;stroke-width:0.264583" x="74.811264" y="397.71545" id="rev_num" ns2:label="rev_num"><ns0:tspan id="rev_num_tspan" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;fill:#111111;fill-opacity:1;stroke-width:0.264583" x="74.811264" y="397.71545">Rev 1.00</ns0:tspan></ns0:text>
+    <ns0:text xml:space="preserve" style="font-size:16.9333px;line-height:1.25;font-family:Cambria;-inkscape-font-specification:Cambria;text-align:end;text-anchor:end;display:inline;fill:#111111;fill-opacity:1;stroke-width:0.264583" x="-116.88449" y="385.72391" id="fig_name" ns2:label="fig_name"><ns0:tspan id="fig_name_tspan" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;fill:#111111;fill-opacity:1;stroke-width:0.264583" x="73.921059" y="385.72391">Fig. SW8-Torpedo</ns0:tspan></ns0:text>
+  </ns0:g>
+  <ns0:g id="g5075" ns2:label="pin_labels" transform="translate(-17.034866,90.544202)" ns1:insensitive="true">
+    <ns0:g id="g1924" ns2:label="pin_1" transform="translate(487.75025,-377.91041)">
+      <ns0:rect style="fill:#98ebff;fill-opacity:0;stroke:#111111;stroke-width:0.499999;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;stroke-opacity:0.6" id="rect18486" width="20.432695" height="20.773432" x="-89.463295" y="463.17474" ns2:label="pin_1_box" />
+      <ns0:text xml:space="preserve" style="font-size:16.9333px;line-height:1.25;font-family:Cambria;-inkscape-font-specification:Cambria;text-align:start;text-anchor:start;stroke-width:0.264583" x="-92.117256" y="478.28595" id="text18502" ns2:label="pin_1_label"><ns0:tspan id="pin_1_label_text" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;stroke-width:0.264583" x="-63.385212" y="478.28595">YLW</ns0:tspan></ns0:text>
+      <ns0:path style="display:inline;fill:none;stroke:#111111;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;stroke-opacity:0.6" d="m -69.030596,463.17477 -20.432694,20.7735" id="path18604" ns2:label="pin_1_unc" />
+    </ns0:g>
+    <ns0:g id="g1932" ns2:label="pin_2" transform="translate(487.75025,-377.91041)">
+      <ns0:rect style="display:inline;fill:#98ebff;fill-opacity:0;stroke:#111111;stroke-width:0.499999;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;stroke-opacity:0.6" id="rect18490" width="20.432695" height="20.773432" x="-89.463295" y="489.04453" ns2:label="pin_2_box" />
+      <ns0:text xml:space="preserve" style="font-size:16.9333px;line-height:1.25;font-family:Cambria;-inkscape-font-specification:Cambria;text-align:start;text-anchor:start;display:inline;stroke-width:0.264583" x="-92.117256" y="504.04474" id="text18506" ns2:label="pin_2_label"><ns0:tspan id="pin_2_label_text" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;stroke-width:0.264583" x="-63.385212" y="504.04474">BLK</ns0:tspan></ns0:text>
+      <ns0:path style="fill:none;stroke:#111111;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;stroke-opacity:0.6" d="m -69.030596,489.04447 -20.432695,20.7735" id="path18606" ns2:label="pin_2_unc" />
+    </ns0:g>
+    <ns0:g id="g1940" ns2:label="pin_3" transform="translate(487.75025,-377.91041)">
+      <ns0:rect style="fill:#98ebff;fill-opacity:0;stroke:#111111;stroke-width:0.499999;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;stroke-opacity:0.6" id="rect18496" width="20.432695" height="20.773432" x="-89.463295" y="514.91443" ns2:label="pin_3_box" />
+      <ns0:text xml:space="preserve" style="font-size:16.9333px;line-height:1.25;font-family:Cambria;-inkscape-font-specification:Cambria;text-align:start;text-anchor:start;display:inline;stroke-width:0.264583" x="-92.117256" y="529.80371" id="text18510" ns2:label="pin_3_label"><ns0:tspan id="pin_3_label_text" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;stroke-width:0.264583" x="-63.385212" y="529.80371">BLU</ns0:tspan></ns0:text>
+      <ns0:path style="fill:none;stroke:#111111;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;stroke-opacity:0.6" d="m -69.030596,514.91437 -20.432694,20.7735" id="path18608" ns2:label="pin_3_unc" />
+    </ns0:g>
+    <ns0:g id="g1948" ns2:label="pin_4" transform="translate(487.75025,-377.91041)">
+      <ns0:rect style="fill:none;fill-opacity:1;stroke:#111111;stroke-width:0.499999;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;stroke-opacity:0.6" id="rect18470" width="20.432695" height="20.773432" x="-89.463295" y="540.78418" ns2:label="pin_4_box" />
+      <ns0:text xml:space="preserve" style="font-size:16.9333px;line-height:1.25;font-family:Cambria;-inkscape-font-specification:Cambria;text-align:start;text-anchor:start;stroke-width:0.264583" x="-92.117256" y="555.5625" id="text18514" ns2:label="pin_4_label"><ns0:tspan id="pin_4_label_text" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;stroke-width:0.264583" x="-63.385212" y="555.5625">RED</ns0:tspan></ns0:text>
+      <ns0:path style="fill:none;stroke:#111111;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;stroke-opacity:0.6" d="m -69.030596,540.78407 -20.432694,20.7735" id="path18610" ns2:label="pin_4_unc" />
+    </ns0:g>
+  </ns0:g>
+  <ns0:g id="pin_label_color" style="display:inline" transform="translate(1.3e-5,90.544154)" ns1:insensitive="true">
+    <ns0:g id="pin_1_label_color">
+      <ns0:path style="fill:#F2A833;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1" d="M 381.25206,106.03777 401.68478,85.264333 H 381.25206 Z" id="pin_1_label_c_top" />
+      <ns0:path style="fill:#F2A833;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 381.25206,106.03786 401.68478,85.264359 V 106.03777 Z" id="pin_1_label_c_bot" />
+      <ns0:text xml:space="preserve" style="font-size:16.9333px;line-height:1.25;font-family:Cambria;-inkscape-font-specification:Cambria;fill:#111111;fill-opacity:1;stroke-width:0.264583" x="-84.323631" y="478.82001" id="text18546" ns2:label="pin_1_num" transform="translate(470.71537,-377.91041)"><ns0:tspan id="tspan18544" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';fill:#111111;fill-opacity:1;stroke-width:0.264583" x="-84.323631" y="478.82001">1</ns0:tspan></ns0:text>
+    </ns0:g>
+    <ns0:g id="pin_2_label_color" transform="translate(1.601709e-5,25.869782)">
+      <ns0:path style="fill:#111111;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1" d="M 381.25206,106.03777 401.68478,85.264333 H 381.25206 Z" id="pin_2_label_c_top" />
+      <ns0:path style="fill:#111111;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 381.25206,106.03786 401.68478,85.264359 V 106.03777 Z" id="pin_2_label_c_bot" />
+      <ns0:text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New';fill:#111111;fill-opacity:1;stroke-width:0.264583" x="-84.0177" y="504.74359" id="text18550" ns2:label="pin_2_num" transform="translate(470.71535,-403.78019)"><ns0:tspan id="tspan18548" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';fill:#111111;fill-opacity:1;stroke-width:0.264583" x="-84.0177" y="504.74359">2</ns0:tspan></ns0:text>
+    </ns0:g>
+    <ns0:g id="pin_3_label_color" transform="translate(1.601709e-5,51.739686)">
+      <ns0:path style="fill:#3388DE;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1" d="M 381.25206,106.03777 401.68478,85.264333 H 381.25206 Z" id="pin_3_label_c_top" />
+      <ns0:path style="fill:#3388DE;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 381.25206,106.03786 401.68478,85.264359 V 106.03777 Z" id="pin_3_label_c_bot" />
+      <ns0:text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New';fill:#111111;fill-opacity:1;stroke-width:0.264583" x="-84.290558" y="530.48938" id="text18554" ns2:label="pin_3_num" transform="translate(470.71535,-429.65009)"><ns0:tspan id="tspan18552" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';fill:#111111;fill-opacity:1;stroke-width:0.264583" x="-84.290558" y="530.48938">3</ns0:tspan></ns0:text>
+    </ns0:g>
+    <ns0:g id="pin_4_label_color" transform="translate(1.601709e-5,77.609437)">
+      <ns0:path style="fill:#EA3030;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1" d="M 381.25206,106.03777 401.68478,85.264333 H 381.25206 Z" id="pin_4_label_c_top" />
+      <ns0:path style="fill:#EA3030;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 381.25206,106.03786 401.68478,85.264359 V 106.03777 Z" id="pin_4_label_c_bot" />
+      <ns0:text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New';fill:#111111;fill-opacity:1;stroke-width:0.264583" x="-84.195473" y="556.35925" id="text18558" ns2:label="pin_4_num" transform="translate(470.71535,-455.51984)"><ns0:tspan id="tspan18556" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';fill:#111111;fill-opacity:1;stroke-width:0.264583" x="-84.195473" y="556.35925">4</ns0:tspan></ns0:text>
+    </ns0:g>
+  </ns0:g>
+</ns0:svg>
