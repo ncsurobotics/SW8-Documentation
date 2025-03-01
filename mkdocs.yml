@@ -71,10 +71,10 @@ nav:
       - Acoustics System: electrical/legacy/acoustics.md
       - Boards: electrical/legacy/boards.md
       - Cameras: electrical/legacy/cameras.md
-    - Parts List / Bill of Materials: electrical/parts.md
+    - Parts List / Bill of Materials: electrical/parts.md 
     - Repository List: electrical/repos.md
   - Mechanical:
     - Overview: mechanical/overview.md
   - Software:
     - Overview: software/overview.md
-  - ⮤ Return to general documentation: https://ncsurobotics.github.io/
+  - ⮤ Return to general documentation: https://ncsurobotics.github.io/Documentation
