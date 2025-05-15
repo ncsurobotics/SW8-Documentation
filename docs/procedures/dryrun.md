@@ -16,47 +16,51 @@
 	 2. Enter the password when prompted (ask other members if you don't know the password)
 	 3. Once you've entered the password, you'll have a ssh session connected to the Jetson. You'll see a shell from the Jetson in your terminal now.
 
-![](./img/ssh_login.png)
+!!! example
+    ![](./img/ssh_login.png)
 
 ## Verify everything is connected to the Jetson
 !!! important
     Run the following commands on the Jetson over the ssh connection.
 
-First make sure all necessary devices are present:
-```bash
-ls /dev/serial/by-id/
-```
-
-!!! important
+!!! info
     The output will vary slightly because:
 
     - These names include serial numbers
     - The control board may be either Adafruit or STMicroElectronics
     - Peripheral devices like acoustics may not be installed
 
+First make sure all necessary devices are present:
+```bash
+ls /dev/serial/by-id/
+```
+
 You should see several devices. Make sure the following exist:
+
 - **1** Control Board
 - **2** Texas Instruments devices (MEB, it's actually just one device but shows up as two)
 
 If acoustics is installed, make sure the following exist:
+
 - **2** Digilent devices (Acoustics FPGA, it's actually just one device, but shows up as two).
 
-Example output:
-![](./img/ls_serial.png)
+!!! example "Example output"
+    ![](./img/ls_serial.png)
 
-As you can see:
+    As you can see:
 
-1. The second device is our control board (it contains "Control_Board" in its name)
-2. The third and fourth devices are our two Texas Instruments devices (they contain "Texas_Instruments" in ther names)
-3. The acoustics FPGA is not connected, so no device appears (but if it were, it would contain "Digilent" in its name)
+    1. The second device is our control board (it contains "Control_Board" in its name)
+    2. The third and fourth devices are our two Texas Instruments devices (they contain "Texas_Instruments" in ther names)
+    3. The acoustics FPGA is not connected, so no device appears (but if it were, it would contain "Digilent" in its name)
 
 Then, make sure cameras are connected:
 ```bash
 v4l2-ctl --list-devices
 ```
 
-You should see two devices labeled `FrontCam` and `BottomCam` (two different sections as shown below!):
-![](./img/list_cams.png)
+!!! example "Example Output"
+    ![](./img/list_cams.png)
+    You should see two devices labeled `FrontCam` and `BottomCam` (two different sections as shown above!)
 
 ## Test Arm & Kill
 1. Arm the robot using the hardware switch
