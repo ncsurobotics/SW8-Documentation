@@ -27,7 +27,7 @@ Starting with the first file name, do the following:
 	export PORT=$(realpath FILE_NAME)
 	echo $PORT
 	```
-2. Begin following the steps in [MEB Communication & Voltage Monitor](../dryrun.md#meb-communication--voltage-monitor)
+2. Begin following the steps in [MEB Communication & Voltage Monitor](../dryrun.md#meb-communication-voltage-monitor)
 	 1. If you encounter no errors, you have selected the correct one and can continue
 	 2. If you encounter any errors, return here and start from step 1 using the second file name
 	 3. If you encounter errors with both file names, reboot the robot and try again
