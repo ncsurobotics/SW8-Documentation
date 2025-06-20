@@ -93,12 +93,22 @@ If your SSH connection to the Jetson closes unexpectedly, [see here](./troublesh
     cd ~
     ```
 
-Run the following commands:
+First, run the following commands:
+```bash
+export CB_PORT=$(realpath /dev/serial/by-id/*Control_Board*)
+echo $CB_PORT
+```
+
+This should print out something like `/dev/ttyACM0`, where the `0` is any number. 
+If it does not, the Jetson is not recognizing that a control board is connected. You should start by rebooting.
+
+Next, run the following commands
 ```bash
 cd ~/AUVControlBoard/iface
-./launch.py example/motor_test.py
+./launch.py -p $CB_PORT example/motor_test.py on the robot
 ```
-The second command  is a script that will prompt for dry run settings (speed and duration):
+
+The final command  is a script that will prompt for dry run settings (speed and duration):
 
 1. When prompted for speed, press enter to use the default setting
 2. When prompted for duration, press enter to use the default setting
@@ -107,9 +117,6 @@ The second command  is a script that will prompt for dry run settings (speed and
 
 !!! info
     If you get error 255 from the control board scripts, this indicates a timeout occurred. This is likely not a communication error with the control board. Just re-run the script and try again. It should work.
-
-!!! info
-    If you get errors about communication with the control board (unable to open port, errors other than 255), you may need to specify a port (launch.py defaults to `/dev/ttyACM0`). To check the port run `realpath /dev/serial/by-id/*Control_Board*`.
 
 If any of the following occur, fix them!
 
