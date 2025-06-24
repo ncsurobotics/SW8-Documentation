@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#connect-to-system" class="md-skip">
+        <a href="#seawolf-8-dryrun-procedures" class="md-skip">
           Skip to content
         </a>
       
@@ -307,7 +307,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="https://ncsurobotics.github.io/Documentation" class="md-tabs__link">
+      <a href="https://ncsurobotics.github.io/" class="md-tabs__link">
         
   
   
@@ -456,6 +456,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -488,6 +490,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -496,18 +500,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#connect-to-system" class="md-nav__link">
+  <a href="#connect-to-the-system" class="md-nav__link">
     <span class="md-ellipsis">
-      Connect to System
+      Connect to the system
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#verify-everything-connected-to-jetson" class="md-nav__link">
+  <a href="#verify-everything-is-connected-to-the-jetson" class="md-nav__link">
     <span class="md-ellipsis">
-      Verify everything Connected to Jetson
+      Verify everything is connected to the Jetson
     </span>
   </a>
   
@@ -535,6 +539,15 @@
   <a href="#lbb-test" class="md-nav__link">
     <span class="md-ellipsis">
       LBB Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-meb-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting MEB Port
     </span>
   </a>
   
@@ -577,9 +590,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#power-off-safely" class="md-nav__link">
+  <a href="#disarm-and-power-off-safely" class="md-nav__link">
     <span class="md-ellipsis">
-      Power off Safely
+      Disarm and Power Off Safely
     </span>
   </a>
   
@@ -1805,7 +1818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://ncsurobotics.github.io/Documentation" class="md-nav__link">
+      <a href="https://ncsurobotics.github.io/" class="md-nav__link">
         
   
   
@@ -1837,6 +1850,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1845,18 +1860,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#connect-to-system" class="md-nav__link">
+  <a href="#connect-to-the-system" class="md-nav__link">
     <span class="md-ellipsis">
-      Connect to System
+      Connect to the system
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#verify-everything-connected-to-jetson" class="md-nav__link">
+  <a href="#verify-everything-is-connected-to-the-jetson" class="md-nav__link">
     <span class="md-ellipsis">
-      Verify everything Connected to Jetson
+      Verify everything is connected to the Jetson
     </span>
   </a>
   
@@ -1884,6 +1899,15 @@
   <a href="#lbb-test" class="md-nav__link">
     <span class="md-ellipsis">
       LBB Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-meb-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting MEB Port
     </span>
   </a>
   
@@ -1926,9 +1950,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#power-off-safely" class="md-nav__link">
+  <a href="#disarm-and-power-off-safely" class="md-nav__link">
     <span class="md-ellipsis">
-      Power off Safely
+      Disarm and Power Off Safely
     </span>
   </a>
   
@@ -1950,64 +1974,127 @@
 
 
 
-  <h1>Dry Run</h1>
-
-<details class="custom">
-<summary>Revision History</summary>
-<p><strong>09/14/2023: Initial Checklist / Procedure (Marcus Behel)</strong></p>
-</details>
-<p><strong><em>Follow these sections in order!</em></strong></p>
-<h2 id="connect-to-system">Connect to System</h2>
-<ul>
-<li>Connect BOTH batteries to the robot (this is important! LBB is known to misbehave a little if the robot is powered on with only one battery present!)</li>
+<h1 id="seawolf-8-dryrun-procedures">SeaWolf 8 Dryrun Procedures</h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Unless you know what you are doing, please use the team laptop instead of your personal device</p>
+<p>It is known to work and most troubleshooting instructions assume that you are using it</p>
+</div>
+<h2 id="connect-to-the-system">Connect to the system</h2>
+<ol>
+<li>Connect BOTH batteries to the robot (<strong>this is important!</strong> LBB is known to misbehave a little if the robot is powered on with only one battery present!)</li>
 <li>Power the robot on using the system switch</li>
-<li>Connect the teather to the endcap, and the other end to your computer</li>
-<li>Wait up to 2 minutes for your computer to connect to the jetson by ethernet. Once connected, continue.</li>
-<li>SSH into the jetson by running the following command in a terminal (works on windows too)
-    <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>sw8@192.168.2.5
-</code></pre></div></li>
+<li>Connect the tether to the end cap and the other end to your computer</li>
+<li>Wait up to 2 minutes for your computer to connect to the Jetson by ethernet. Once connected, continue. Otherwise, see <a href="../troubleshooting/jetson/#checking-connection">Jetson Troubleshooting</a>.</li>
+<li>SSH into the Jetson by running the following command in a terminal (works on windows too):
+     <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>sw8@192.168.2.5
+</code></pre></div><ol>
 <li>If prompted about a "fingerprint" enter "yes"</li>
-<li>Enter the password when prompted (ask other members if you don't know the password; I can't put it in public docs!)</li>
-<li>Once you've entered the password, you'll have a ssh session connected to the jetson. You'll see a shell from the jetson in your terminal now.</li>
-</ul>
-<p><img alt="" src="../img/sw8_login_ssh.jpg" /></p>
-<h2 id="verify-everything-connected-to-jetson">Verify everything Connected to Jetson</h2>
-<p><em>Run the following commands in your ssh session.</em></p>
-<p>First make sure all necessary UART devices are present</p>
-<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>/dev/serial/by-id/
-</code></pre></div>
-<p>You should see several devices. Make sure the following exist
-    - One control board
-    - Two "TI MSP430" devices (MEB, it's actually just one device but shows up as two)
-    - Two "Digilent" devices (Acoustics FPGA, it's actually just one device, but shows up as two)</p>
-<p>Example output:</p>
-<p><img alt="" src="../img/lsserial.jpg" /></p>
-<p><em>Note: the output sill vary slightly (these names include serial numbers). Also, the control board may be either Adafruit or STMicroElectronics.</em></p>
-<p><br /></p>
-<p>Then, make make sure cameras are connected</p>
-<div class="highlight"><pre><span></span><code>v4l2-ctl<span class="w"> </span>--list-devices
-</code></pre></div>
-<p>You should see two ArduCam devices (two different sections as shown below!)</p>
-<p>Example output</p>
-<p><img alt="" src="../img/v4l2output.jpg" /></p>
-<h2 id="test-arm-kill">Test Arm &amp; Kill</h2>
+<li>Enter the password when prompted (ask other members if you don't know the password)</li>
+<li>Once you've entered the password, you'll have a ssh session connected to the Jetson. You'll see a shell from the Jetson in your terminal now.</li>
+</ol>
+</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><img alt="" src="../img/ssh_login.png" /></p>
+</div>
+<h2 id="verify-everything-is-connected-to-the-jetson">Verify everything is connected to the Jetson</h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Run the following commands on the Jetson over the ssh connection.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The output will vary slightly because:</p>
 <ul>
-<li>Arm the robot using the hardware arm switch. Thrusters should not beep yet (if they do, software kill is either broken or disabled).</li>
-<li>Run <code>./arm.sh</code> to software arm the robot. Thrusters should now beep.</li>
-<li>Kill the robot using the hardware switch.</li>
-<li>Wait 3 seconds</li>
-<li>Arm the robot using the hardware switch. Thrusters should now beep.</li>
+<li>These names include serial numbers</li>
+<li>The control board may be either Adafruit or STMicroElectronics</li>
+<li>Peripheral devices like acoustics may not be installed</li>
 </ul>
+</div>
+<p>First make sure all necessary devices are present:
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>/dev/serial/by-id/
+</code></pre></div></p>
+<p>You should see several devices. Make sure the following exist:</p>
+<ul>
+<li><strong>1</strong> Control Board</li>
+<li><strong>2</strong> Texas Instruments devices (MEB, it's actually just one device but shows up as two)</li>
+</ul>
+<p>If acoustics is installed, make sure the following exist:</p>
+<ul>
+<li><strong>2</strong> Digilent devices (Acoustics FPGA, it's actually just one device, but shows up as two).</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example output</p>
+<p><img alt="" src="../img/ls_serial.png" /></p>
+<p>As you can see:</p>
+<ol>
+<li>The second device is our control board (it contains "Control_Board" in its name)</li>
+<li>The third and fourth devices are our two Texas Instruments devices (they contain "Texas_Instruments" in ther names)</li>
+<li>The acoustics FPGA is not connected, so no device appears (but if it were, it would contain "Digilent" in its name)</li>
+</ol>
+</div>
+<p>Then, make sure cameras are connected:
+<div class="highlight"><pre><span></span><code>v4l2-ctl<span class="w"> </span>--list-devices
+</code></pre></div></p>
+<div class="admonition example">
+<p class="admonition-title">Example Output</p>
+<p><img alt="" src="../img/list_cams.png" />
+You should see two devices labeled <code>FrontCam</code> and <code>BottomCam</code> (two different sections as shown above!)</p>
+</div>
+<h2 id="test-arm-kill">Test Arm &amp; Kill</h2>
+<ol>
+<li>Arm the robot using the hardware switch</li>
+<li>The thrusters should beep 5 times<ol>
+<li>3 short beeps in rising pitch</li>
+<li>1 long beep at a lower pitch</li>
+<li>1 long beep at a higher pitch</li>
+</ol>
+</li>
+<li>Wait 3 seconds</li>
+<li>Disarm the robot</li>
+<li>Wait 3 seconds</li>
+<li>Rearm the robot</li>
+<li>The thrusters should beep again</li>
+</ol>
+<p>If you do not hear all 5 beeps when arming, see <a href="../troubleshooting/arm/">troubleshooting details</a> </p>
+<p>If your SSH connection to the Jetson closes unexpectedly, <a href="../troubleshooting/jetson/#unexpected-reboot-when-arming">see here</a></p>
 <h2 id="motor-test">Motor Test</h2>
-<p><em>Note: This assumes AUVControlBoard interface scripts are located at <code>~/AUVControlBoard_VERSION</code> on the jetson (replace "VERSION" with whatever version is on the jetson; run <code>ls ~</code> to list what is on the jetson)</em></p>
-<p>Follow the above instructions to determine where the control board scripts are (determine the version).</p>
-<p>Run the following commands. The last command is a script that will prompt for dry run settings (speed and duration). Just press enter twice for default settings. Then, type each thruster number followed by enter and make sure that thruster moves. After testing all thrusters, type "q" and press enter to exit.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/AUVControlBoard_VERSION/<span class="w">   </span><span class="c1"># Change VERSION!!!</span>
-<span class="nb">cd</span><span class="w"> </span>iface
-./launch.py<span class="w"> </span>example/motor_test.py
-</code></pre></div>
-<p>Note 1: If you get error 255 from the control board scripts, this indicates a timeout occurred. This is likely not a communication error with the control board. Just re-run the script and try again. It should work.</p>
-<p>Note 2: If you get errors about communication with the control board (unable to open port, errors other than 255), you may need to specify a port (launch.py defaults to <code>/dev/ttyACM0</code>). To check the port run <code>realpath /dev/serial/by-id/*Control_Board*</code>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This assumes <code>AUVControlBoard</code> interface scripts are located at <code>~/AUVControlBoard</code> on the Jetson.</p>
+<p>The correct version of the scripts should already be selected. If you need to change versions, do the following:</p>
+<ol>
+<li>Get the name of the version you want from <a href="https://github.com/ncsurobotics/AUVControlBoard/tags">this page</a></li>
+<li>Run the following commands, replacing <code>VERSION</code> with the name of the version you want:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/AUVControlBoard
+git<span class="w"> </span>checkout<span class="w"> </span>VERSION
+<span class="nb">cd</span><span class="w"> </span>~
+</code></pre></div></li>
+</ol>
+</div>
+<p>First, run the following commands:
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CB_PORT</span><span class="o">=</span><span class="k">$(</span>realpath<span class="w"> </span>/dev/serial/by-id/*Control_Board*<span class="k">)</span>
+<span class="nb">echo</span><span class="w"> </span><span class="nv">$CB_PORT</span>
+</code></pre></div></p>
+<p>This should print out something like <code>/dev/ttyACM0</code>, where the <code>0</code> is any number. 
+If it does not, the Jetson is not recognizing that a control board is connected. You should start by rebooting.</p>
+<p>Next, run the following commands
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/AUVControlBoard/iface
+./launch.py<span class="w"> </span>-p<span class="w"> </span><span class="nv">$CB_PORT</span><span class="w"> </span>example/motor_test.py<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span>robot
+</code></pre></div></p>
+<p>The final command  is a script that will prompt for dry run settings (speed and duration):</p>
+<ol>
+<li>When prompted for speed, press enter to use the default setting</li>
+<li>When prompted for duration, press enter to use the default setting</li>
+<li>Then, type each thruster number followed by enter and make sure that the thruster moves</li>
+<li>After testing all thrusters, type "q" and press enter to exit.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If you get error 255 from the control board scripts, this indicates a timeout occurred. This is likely not a communication error with the control board. Just re-run the script and try again. It should work.</p>
+</div>
 <p>If any of the following occur, fix them!</p>
 <ul>
 <li>Wrong thruster numbers moving</li>
@@ -2015,89 +2102,119 @@
 <li>Thrusters moving "weakly" or "clicking" while moving (usually means power pole block is not seated properly)</li>
 </ul>
 <h2 id="lbb-test">LBB Test</h2>
-<ul>
+<ol>
 <li>Disconnect one battery</li>
 <li>Repeat the motor test</li>
 <li>Plug the disconnected battery back in</li>
 <li>Disconnect the OTHER battery</li>
 <li>Repeat the motor test</li>
-</ul>
+</ol>
 <p>The motor test should work off either battery on its own. If it is not, the LBB may not be working or one battery may not be working (check fuses, voltage on fischer, etc)</p>
+<h2 id="setting-meb-port">Setting MEB Port</h2>
+<p>Run the following to determine what communication port MEB is on:
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PORT</span><span class="o">=</span><span class="k">$(</span>realpath<span class="w"> </span>/dev/serial/by-id/usb-Texas_Instruments_MSP_Tools_Driver_*-if02<span class="k">)</span>
+<span class="nb">echo</span><span class="w"> </span><span class="nv">$PORT</span>
+</code></pre></div>
+This should output something like <code>/dev/ttyACM1</code>, where the 1 can be any number. If it does not, see <a href="../troubleshooting/meb/#port">MEB Troubleshooting</a>.</p>
 <h2 id="meb-communication-voltage-monitor">MEB Communication &amp; Voltage Monitor</h2>
-<p><em>Note: this assumes the MEB scripts (https://github.com/ncsurobotics/SW8E-MEB-Software scripts folder) are located at <code>~/meb-scripts</code> on the jetson.</em></p>
-<p>Run the following command to determine what UART port MEB is</p>
-<div class="highlight"><pre><span></span><code>realpath<span class="w"> </span>/dev/serial/by-id/Texas_Instruments_MSP_Tools_Driver_*-if02
-</code></pre></div>
-<p>Run the following command. Replace <code>PORT</code> with the port from the command above.</p>
-<div class="highlight"><pre><span></span><code>cd ~/meb-scripts/
-python3 read_sys_voltage.py PORT 57600
-</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This assumes the <a href="https://github.com/ncsurobotics/SW8E-MEB-Software">MEB software</a> scripts folder is located at <code>~/SW8E-MEB-Software/scripts/</code> on the Jetson</p>
+</div>
+<p>Run the following command (the <code>PORT</code> variable we exported in <a href="#setting-meb-port">Setting MEB Port</a> is used):
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/SW8E-MEB-Software/scripts/
+python3<span class="w"> </span>read_sys_voltage.py<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span><span class="m">57600</span>
+</code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The voltage monitor is currently not calibrated, so do not worry about ensuring that the correct battery voltage is being read.</p>
+<p>You should still complete this step to test communications with MEB.</p>
+</div>
 <p>Make sure correct battery voltage is being read. Hold CTRL and press C (CTRL+C) to exit the program.</p>
 <p>If the wrong voltage is read, the voltage monitor is not working.</p>
 <p>If you get serial communication errors, MEB may not be communicating properly (or you may be using the wrong port).</p>
 <h2 id="msb">MSB</h2>
-<p><em>Note: this assumes the MEB scripts (https://github.com/ncsurobotics/SW8E-MEB-Software scripts folder) are located at <code>~/meb-scripts</code> on the jetson.</em></p>
-<p>Run</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/meb-scripts/
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This assumes the <a href="https://github.com/ncsurobotics/SW8E-MEB-Software">MEB software</a> scripts folder is located at <code>~/SW8E-MEB-Software/scripts/</code> on the Jetson</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>You will need dropper makers loaded to observe correct behavior, but loading torpedoes is discouraged</p>
+</div>
+<p>Run:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/SW8E-MEB-Software/scripts/
 </code></pre></div>
-<p>The MEB is used to communicate with MSB, thus remember the <code>PORT</code> you used in the previous section and use it again in the following commands.</p>
-<p>The general format of the commands you will run are as follows (do not run just yet)</p>
-<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>msb_command.py<span class="w"> </span>PORT<span class="w"> </span><span class="m">57600</span><span class="w"> </span>CMD
-</code></pre></div>
-<p>You will need to run this command multiple times, replacing <code>CMD</code> with something different (make sure to replace <code>PORT</code>!)</p>
-<p><em>You will need dropper makers loaded to observe correct behavior, but loading torpedoes is discouraged.</em></p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Droppers should hold markers and torpedoes are in loaded position</span>
-python3<span class="w"> </span>msb_command.py<span class="w"> </span>PORT<span class="w"> </span><span class="m">57600</span><span class="w"> </span>reset
-
-<span class="c1"># Drop marker 1</span>
-python3<span class="w"> </span>msb_command.py<span class="w"> </span>PORT<span class="w"> </span><span class="m">57600</span><span class="w"> </span>d1_trig
-
-<span class="c1"># Drop marker 2</span>
-python3<span class="w"> </span>msb_command.py<span class="w"> </span>PORT<span class="w"> </span><span class="m">57600</span><span class="w"> </span>d2_trig
-
-<span class="c1"># Fire torpedo 1</span>
-python3<span class="w"> </span>msb_command.py<span class="w"> </span>PORT<span class="w"> </span><span class="m">57600</span><span class="w"> </span>t1_trig
-
-<span class="c1"># Fire torpedo 2</span>
-python3<span class="w"> </span>msb_command.py<span class="w"> </span>PORT<span class="w"> </span><span class="m">57600</span><span class="w"> </span>t2_trig
-
-<span class="c1"># Droppers hold markers and torpedoes return to loaded position again</span>
-python3<span class="w"> </span>msb_command.py<span class="w"> </span>PORT<span class="w"> </span><span class="m">57600</span><span class="w"> </span>reset
-</code></pre></div>
+The MEB is used to communicate with MSB, thus the <code>PORT</code> variable we exported in <a href="#setting-meb-port">Setting MEB Port</a> is used in the following commands. You should be able to just copy and pase these commands.</p>
+<p>Run each of the following commands:</p>
+<ol>
+<li>Reset (Droppers should hold markers and torpedoes are in loaded position)
+     <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>msb_command.py<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span><span class="m">57600</span><span class="w"> </span>reset
+</code></pre></div></li>
+<li>Drop marker 1
+   <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>msb_command.py<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span><span class="m">57600</span><span class="w"> </span>d1_trig
+</code></pre></div></li>
+<li>Drop marker 2
+   <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>msb_command.py<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span><span class="m">57600</span><span class="w"> </span>d2_trig
+</code></pre></div></li>
+<li>Fire torpedo 1
+   <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>msb_command.py<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span><span class="m">57600</span><span class="w"> </span>t1_trig
+</code></pre></div></li>
+<li>Fire torpedo 2
+   <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>msb_command.py<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span><span class="m">57600</span><span class="w"> </span>t2_trig
+</code></pre></div></li>
+<li>Reset (Droppers hold markers and torpedoes return to loaded position again)
+   <div class="highlight"><pre><span></span><code>python3<span class="w"> </span>msb_command.py<span class="w"> </span><span class="nv">$PORT</span><span class="w"> </span><span class="m">57600</span><span class="w"> </span>reset
+</code></pre></div></li>
+</ol>
 <h2 id="acoustics-system">Acoustics System</h2>
-<p>TODO: This will be written once there is a stable test interface for acoustics. For now, refer to the acoustics project people and have them test what they want.</p>
+<div class="admonition missing">
+<p class="admonition-title">TODO</p>
+<p>This will be written once there is a stable test interface for acoustics. For now, refer to the acoustics project people and have them test what they want.</p>
+</div>
 <h2 id="camera-stream-test">Camera Stream Test</h2>
-<p><em>Note: this assumes the <code>starstreams.sh</code> script (https://github.com/ncsurobotics/SW8S-Camtest) are located at <code>~/camtest</code> on the jetson.</em></p>
-<p>Note: On current images, rtsp-simple-server is not started automatically. Thus for now you first need to run the following</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/rtsp-simple-server
-nohup<span class="w"> </span>./rtsp-simple-server<span class="w"> </span><span class="p">&amp;</span>
-</code></pre></div>
-<p>Then, run</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/camtest/
-./startstreams.sh
-</code></pre></div>
-<p><em>Note: this script will not exit on its own unless it fails. If it exits on its own, the cameras are probably not connected!</em></p>
-<p>Next, you need to use <a href="https://www.videolan.org/vlc/">VLC</a> on your computer to view the streams and make sure they are working. Note that the streams will be "delayed" when viewing with VLC, but this is OK. To view with less latency, you can install mpv and use the playstreams scripts in the camtest repo (if you don't know what this means, just test with VLC).</p>
-<p>To view with VLC</p>
-<ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This assumes the <a href="https://github.com/ncsurobotics/SW8E-MEB-Software">Cam test scripts</a> folder is located at <code>~/SW8S-CamTest</code> on the Jetson</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The RTSP server (mediamtx) is automatically started by a systemd user service.</p>
+<p>Run the following to check the status of the service (press 'q' to exit):
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>--user<span class="w"> </span>status<span class="w"> </span>mediamtx.service
+</code></pre></div></p>
+</div>
+<p>Run:
+<div class="highlight"><pre><span></span><code>~/SW8S-CamTest/startstreams.sh
+</code></pre></div></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This script will not exit on its own unless it fails. If it exits on its own, the cameras are probably not connected!</p>
+</div>
+<p>Next, you need to use <a href="https://www.videolan.org/vlc/">VLC</a> on your computer to view the streams and make sure they are working. Note that the streams will be "delayed" when viewing with VLC, but this is OK. To view with less latency, you can install <code>mpv</code> and use the <code>playstreams.sh</code> scripts in the SW8S-CamTest repo (if you don't know what this means, just test with VLC).</p>
+<p>To view with VLC:</p>
+<ol>
 <li>Leave the ssh session open</li>
 <li>Launch VLC</li>
 <li>Media &gt; Open Network Stream</li>
-<li>Enter <code>rtsp://192.168.2.5:8554/cam0</code></li>
+<li>Enter <code>rtsp://192.168.2.5:8554/front.mp4</code></li>
+<li>Click "Play"</li>
+<li>Wait until you see the stream</li>
+<li>Media &gt; Open Network Stream</li>
+<li>Enter <code>rtsp://192.168.2.5:8554/bottom.mp4</code></li>
 <li>Click "Play"</li>
 <li>Wait until you see the stream</li>
 <li>Close VLC</li>
-<li>Repeat to play <code>rtsp://192.168.2.5:8554/cam1</code></li>
-<li>Wait until you see the stream</li>
-</ul>
-<p>When done, run the following on the jetson. Before running, press CTRL+C to kill the startstrams script so you get a shell prompt again.</p>
-<div class="highlight"><pre><span></span><code>killall<span class="w"> </span>rtsp-simple-server
-</code></pre></div>
-<h2 id="power-off-safely">Power off Safely</h2>
-<p>Run</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>poweroff
-</code></pre></div>
-<p>Then wait 30 seconds before turning the system off with the system switch.</p>
+</ol>
+<h2 id="disarm-and-power-off-safely">Disarm and Power Off Safely</h2>
+<ol>
+<li>Disarm the robot using the hardware switch</li>
+<li>Run the following command:
+   <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>poweroff
+</code></pre></div></li>
+<li>Wait 30 seconds</li>
+<li>Turn the system off with the system switch</li>
+</ol>
 
 
 
