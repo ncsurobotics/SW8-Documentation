@@ -105,7 +105,7 @@ If it does not, the Jetson is not recognizing that a control board is connected.
 Next, run the following commands
 ```bash
 cd ~/AUVControlBoard/iface
-./launch.py -p $CB_PORT example/motor_test.py on the robot
+./launch.py -p $CB_PORT example/motor_test.py
 ```
 
 The final command  is a script that will prompt for dry run settings (speed and duration):
